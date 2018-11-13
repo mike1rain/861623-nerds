@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Первый Дождь](https://up.htmlacademy.ru/htmlcss/23/user/861623).
-* Наставник: [Александр Тубольцев] (https://htmlacademy.ru/profile/id86460).
+* Наставник: [Александр Тубольцев](https://htmlacademy.ru/profile/id86460).
 
 ---
 
