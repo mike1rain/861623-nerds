@@ -1,4 +1,4 @@
-.filters {
+/*.filters {
     float: left;
 }
 .catalog {
@@ -10,10 +10,12 @@
 }
 ul {
     display:inline-block;
+    padding: 10px 5px 5px 10px;
 }
 li {
      display:inline-block;
 }
-body {
+.container {
     width: 100%;
+    display:inline-block;
 }
