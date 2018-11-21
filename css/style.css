@@ -1,0 +1,19 @@
+.filters {
+    float: left;
+}
+.catalog {
+    float: right;
+}
+.footer {
+    clear: both;
+
+}
+ul {
+    display:inline-block;
+}
+li {
+     display:inline-block;
+}
+body {
+    width: 100%;
+}
