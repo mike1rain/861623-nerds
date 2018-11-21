@@ -1,0 +1,10 @@
+.footer {
+clear: both;
+}
+.left-column {
+  float: left;
+  width: 20%;
+  min-height: 100%;
+
+  background-color: #fcf8e3;
+}
