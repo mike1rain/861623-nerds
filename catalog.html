@@ -30,57 +30,58 @@
         <h1>Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-        <aside class="filters">
-            <section class="filters">
+        <form class=filters method="get">
+            <aside class="filters">
+
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-            </section>
-            <section>
-                <h2>СТОИМОСТЬ:</h2>
-                <!--Форма-->
-                <br>
-            </section>
-            <fieldset>
-                <legend>Сетка:</legend>
-                <ul>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
-                        <label for="filter-shave">Адаптивная</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
-                        <label for="filter-shave">Фиксированная</label>
-                    </li>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
-                        <label for="filter-shave">Резиновая</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <h2>Особенности:</h2>
-                <ul>
-                    <li class="grid-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
-                        <label for="rubber">Слайдер</label>
-                    </li>
-                    <li class="grid-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
-                        <label for="features">Блок приемуществ</label>
-                    </li>
-                    <li class="grid-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-                        <label for="gallery">Галерея</label>
-                    </li>
-                    <li class="grid-option">
-                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
-                        <label for="cart">Корзина</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <a class="button" href="#">Показать</a>
 
-        </aside>
+                <section>
+                    <h2>СТОИМОСТЬ:</h2>
+                    <!--Форма-->
+                    <br>
+                </section>
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="radio" id="adaptive">
+                            <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="radio" id="fixed">
+                            <label for="fixed">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="radio" id="rubber">
+                            <label for="rubber">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li class="grid-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                            <label for="filter-slider">Слайдер</label>
+                        </li>
+                        <li class="grid-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                            <label for="filter-features">Блок приемуществ</label>
+                        </li>
+                        <li class="grid-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li class="grid-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
+                            <label for="filter-cart">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
 
+            </aside>
+        </form>
         <div class="catalog">
             <section class="items">
                 <h2 class="visually-hidden">Товары</h2>
@@ -105,7 +106,7 @@
                             <p class="catalog-item-text">Информационный сайт для туристов</p>
                             <a class="button" href="#">9900 P</a>
                         </div>
-                        <img src="img/img-pink.jpg" width="360 " height="576" alt="Второй сайт">
+                        <img src="img/img-pink.jpg" width="360 px" height="576px" alt="Второй сайт">
                     </li>
                     <li class="catalog-item">
                         <div class="catalog-item">
@@ -199,7 +200,7 @@
         </p>
         <p>
             <label for="user-text">Текст письма</label>
-            <textarea id="user-text" type="text" name="user-text" placeholder="Текст письма"></textarea>
+            <textarea id="user-text" name="user-text" placeholder="Текст письма"></textarea>
         </p>
         <button type="submit">Отправить</button>
 
