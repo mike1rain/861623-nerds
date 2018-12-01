@@ -36,7 +36,7 @@
     background-color: #d7373b;
 }
 
-.button2 {
+.button-green {
     font: inherit;
 
     text-align: center;
@@ -48,14 +48,14 @@
     border: none;
 }
 
-.button2:hover,
-.button2:focus,
-.button2:active {
+.button-green:hover,
+.button-green:focus,
+.button-green:active {
     color: 0 0 0 30;
     background-color: #00aa62;
 }
 
-.button3 {
+.button-yellow {
     font: inherit;
 
     text-align: center;
@@ -67,9 +67,9 @@
     border: none;
 }
 
-.button3:hover,
-.button3:focus,
-.button3:active {
+.button-yellow:hover,
+.button-yellow:focus,
+.button-yellow:active {
     color: 0 0 0 30;
     background-color: #e5a722;
 }

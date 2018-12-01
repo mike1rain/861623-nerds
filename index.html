@@ -53,7 +53,7 @@
                         <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
                     </p>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a class="button2" href="#">Заказать</a>
+                    <a class="button-green" href="#">Заказать</a>
                 </li>
                 <li class="services-item">
                     <h3>Презентации</h3>
@@ -61,7 +61,7 @@
                         <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
                     </p>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a class="button3" href="#">Заказать</a>
+                    <a class="button-yellow" href="#">Заказать</a>
                 </li>
             </ul>
         </section>
@@ -124,7 +124,7 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <form class="modal_modal-login" method="post" action="#">
+  <form class="modal_modal-login" method="post" action="https://echo.htmlacademy.ru">
         <h2>Напишите нам</h2>
 
         <p>
@@ -134,14 +134,16 @@
         </p>
         <p>
             <label for="user-email">Ваш email</label>
-            <input id="user-email" type="text" name="password" placeholder="Ваш email">
+            <input id="user-email" type="text" name="email" placeholder="Ваш email">
         </p>
         <p>
             <label for="user-text">Текст письма</label>
-            <input id="user-text" type="text" name="password" placeholder="Текст письма">
+            <textarea id="user-text" type="text" name="user-text" placeholder="Текст письма"></textarea>
         </p>
-        <button type="send">Отправить</button>
-        <button class="modal-close">Закрыть</button>
+        <button type="submit">Отправить</button>
+         <span class="visually-hidden">
+             <button class="modal-close">Закрыть</button></span>
+       
     </form>
 </body>
 
