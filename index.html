@@ -13,7 +13,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65"  alt="Логотип для студии"> </a>
+                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип для студии"> </a>
             <ul class="site-navigation">
                 <li> <a href=studio.html>Студия</a></li>
                 <li> <a href=clients.html>Клиенты</a></li>
@@ -53,7 +53,7 @@
                         <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
                     </p>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a class="button" href="#">Заказать</a>
+                    <a class="button2" href="#">Заказать</a>
                 </li>
                 <li class="services-item">
                     <h3>Презентации</h3>
@@ -61,7 +61,7 @@
                         <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
                     </p>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a class="button" href="#">Заказать</a>
+                    <a class="button3" href="#">Заказать</a>
                 </li>
             </ul>
         </section>
@@ -92,10 +92,10 @@
         <section class="clients">
             <h2 class="visually-hidden">Клиенты</h2>
             <ul>
-                <li><img src="img/1-clients.jpg" width="199" height="68" alt="Презентации"></li>
-                <li><img src="img/2-clients.jpg" width="199" height="68" alt="Презентации"></li>
-                <li><img src="img/3-clients.jpg" width="199" height="68" alt="Презентации"></li>
-                <li><img src="img/4-clients.jpg" width="199" height="68" alt="Презентации"></li>
+                <li><a class="clients-logo" href="#"><img src="img/1-clients.jpg" width="199" height="68" alt="html-academy"></a></li>
+                <li><a class="clients-logo" href="#"><img src="img/2-clients.jpg" width="199" height="68" alt="Borodinskiy"></a></li>
+                <li><a class="clients-logo" href="#"><img src="img/3-clients.jpg" width="199" height="68" alt="Pink"></a></li>
+                <li><a class="clients-logo" href="#"><img src="img/4-clients.jpg" width="199" height="68" alt="Mishka"></a></li>
             </ul>
         </section>
 
@@ -124,6 +124,25 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+    <form class="modal_modal-login" method="post" action="#">
+        <h2>Напишите нам</h2>
+
+        <p>
+            <label for="user-name">Ваше Имя</label>
+            <input id="user-name" type="text" name="login" placeholder="Ваше Имя">
+
+        </p>
+        <p>
+            <label for="user-email">Ваш email</label>
+            <input id="user-email" type="text" name="password" placeholder="Ваш email">
+        </p>
+        <p>
+            <label for="user-text">Текст письма</label>
+            <input id="user-text" type="text" name="password" placeholder="Текст письма">
+        </p>
+        <button type="send">Отправить</button>
+        <button class="modal-close">X</button>
+    </form>
 </body>
 
 </html>
