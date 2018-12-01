@@ -74,11 +74,11 @@
     background-color: #e5a722;
 }
 
+.services-item,
 .site-navigation,
 .user-navigation,
-.clients-logo,
-.cart-navigation
-{
+.cart-navigation,
+.client-logo {
     list-style: none;
 }
 
