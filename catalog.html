@@ -22,8 +22,8 @@
                 <li> <a href=contacts.html>Контакты</a></li>
             </ul>
             <ul class="cart-navigation">
-                <li class="cart-link"> 
-                <a href=studio.html>Корзина</a>
+                <li class="cart-link">
+                    <a href=studio.html>Корзина</a>
                 </li>
             </ul>
         </nav>
@@ -39,24 +39,46 @@
                 <!--Форма-->
                 <br>
             </section>
-            <section>
-                <h2>Сетка:</h2>
+            <fieldset>
+                <legend>Сетка:</legend>
                 <ul>
-                    <li>Адаптивная</li>
-                    <li>Фиксированная</li>
-                    <li>Резиновая</li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
+                        <label for="filter-shave">Адаптивная</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
+                        <label for="filter-shave">Фиксированная</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="shaving" id="filter-shave">
+                        <label for="filter-shave">Резиновая</label>
+                    </li>
                 </ul>
-            </section>
-            <section>
+            </fieldset>
+            <fieldset>
                 <h2>Особенности:</h2>
                 <ul>
-                    <li>Слайдер</li>
-                    <li>Блок приемуществ</li>
-                    <li>Галерея</li>
-                    <li>Корзина</li>
+                    <li class="grid-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                        <label for="rubber">Слайдер</label>
+                    </li>
+                    <li class="grid-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                        <label for="features">Блок приемуществ</label>
+                    </li>
+                    <li class="grid-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                        <label for="gallery">Галерея</label>
+                    </li>
+                    <li class="grid-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
+                        <label for="cart">Корзина</label>
+                    </li>
                 </ul>
-                <a class="button" href="#">Показать</a>
-            </section>
+            </fieldset>
+            <a class="button" href="#">Показать</a>
+
         </aside>
 
         <div class="catalog">
@@ -94,7 +116,7 @@
                             <p class="catalog-item-text">Информационный сайт для туристов</p>
                             <a class="button" href="#">9900 P</a>
                         </div>
-                        <img src="img/img-barbershop.jpg"  width="360 " height="576" alt="Третий сайт">
+                        <img src="img/img-barbershop.jpg" width="360 " height="576" alt="Третий сайт">
                     </li>
                     <li class="catalog-item">
                         <div class="catalog-item">
@@ -105,7 +127,7 @@
                             <p class="catalog-item-text">Информационный сайт для туристов</p>
                             <a class="button" href="#">9900 P</a>
                         </div>
-                        <img src="img/img-mishka.jpg"  width="360 " height="576" alt="Четвертый сайт">
+                        <img src="img/img-mishka.jpg" width="360 " height="576" alt="Четвертый сайт">
                     </li>
                     <li class="catalog-item">
                         <div class="catalog-item-hover">
@@ -116,7 +138,7 @@
                             <p class="catalog-item-text">Информационный сайт для туристов</p>
                             <a class="button" href="#">9900 P</a>
                         </div>
-                        <img src="img/img-aplus.jpg"  width="360 " height="576" alt="Пятый сайт">
+                        <img src="img/img-aplus.jpg" width="360 " height="576" alt="Пятый сайт">
                     </li>
                     <li class="catalog-item">
                         <div class="catalog-item-hover">
@@ -127,7 +149,7 @@
                             <p class="catalog-item-text">Информационный сайт для туристов</p>
                             <a class="button" href="#">9900 P</a>
                         </div>
-                        <img src="img/img-kvast.jpg"  width="360 " height="576" alt="Шестой сайт">
+                        <img src="img/img-kvast.jpg" width="360 " height="576" alt="Шестой сайт">
                     </li>
                 </ul>
             </section>
@@ -168,21 +190,21 @@
 
         <p>
             <label for="user-name">Ваше Имя</label>
-            <input id="user-name" type="text" name="login" placeholder="Ваше Имя">
+            <input id="user-name" required type="text" name="login" placeholder="Ваше Имя">
 
         </p>
         <p>
             <label for="user-email">Ваш email</label>
-            <input id="user-email" type="text" name="email" placeholder="Ваш email">
+            <input id="user-email" required type="text" name="email" placeholder="Ваш email">
         </p>
         <p>
             <label for="user-text">Текст письма</label>
             <textarea id="user-text" type="text" name="user-text" placeholder="Текст письма"></textarea>
         </p>
         <button type="submit">Отправить</button>
-         <span class="visually-hidden">
-             <button class="modal-close">Закрыть</button></span>
-       
+        <span class="visually-hidden">
+            <button class="modal-close">Закрыть</button></span>
+
     </form>
 </body>
 
