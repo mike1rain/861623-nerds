@@ -9,14 +9,16 @@ body {
 }
 
 .main-header {
+    padding: 20px;
     color: black;
     font-size: 16px;
     line-height: 30px;
     background-color: #eeeeee;
     list-style: none;
-} 
+}
+
 .main-navigation {
- text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
 .modal_modal-feedback {
@@ -153,21 +155,35 @@ h3 {
 }
 
 .social-button {
-    display: inline-block;
-    margin: 10px;
+    float: left;
+    margin-right: 10px;
     width: 78px;
     height: 78px;
     background: #e1e1e1;
     border-radius: 50%;
-    
-}
-.social-button:hover {
-   background: #e74246; 
-}
-.info b {
-   text-transform: uppercase; 
 }
 
-.items a{
-    color: black;
+.social-button:hover {
+    background: #e74246;
+}
+
+.social-button:active {
+    background: #d7373b;
+}
+
+.info b {
+    text-transform: uppercase;
+}
+
+.items a {
+    color: black;}
+
+
+.last-text p{
+    padding-left: 300px;
+}
+.sidebar legend{
+    text-transform: uppercase;
+    font-weight: 700;
+    
 }

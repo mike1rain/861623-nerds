@@ -33,11 +33,10 @@
         <aside class="sidebar">
             <form class="filters" method="get" action="#">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <section class="half-width">
-          <label for="dayscount">СТОИМОСТЬ:</label><br>
-         <input type="range" min="1" max="14" step="1"> 
-        
-                </section>
+                <fieldset>
+                    <legend>Стоимость:</legend>
+                    <input type="range" min="1" max="14" step="1">
+                </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
                     <ul>
@@ -144,8 +143,8 @@
                                 <a href="catalog-item.html">Шестой сайт
                                 </a>
                             </h3>
-                            <p class="catalog-item-text">Информационный сайт для
-                                <a href="#" class="button">9900 P</a>
+                            <p class="catalog-item-text">Информационный сайт для крафтового пива</p>
+                            <a href="#" class="button">9900 P</a>
                         </div>
                         <img src="img/img-kvast.jpg" width="360" height="576" alt="Шестой сайт">
                     </li>
@@ -172,9 +171,15 @@
         <div class="footer-social">
 
             <ul>
-                <li><a class="social-button" href="img/vk-icon.svg"><span class="visually-hidden">Вконтакте</span></a></li>
-                <li><a class="social-button" href="img/fb-icon.svg"><span class="visually-hidden">Фейсбук</span></a></li>
-                <li><a class="social-button" href="img/insta-icon.svg"><span class="visually-hidden">Инстаграм</span></a></li>
+                <li>
+                    <a class="social-button" href="img/vk-icon.svg"><img src="/img/vk-icon.svg" alt="Вконтакте"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="/img/fb-icon.svg"><img src="/img/fb-icon.svg" alt="Фейсбук"></a>
+                </li>
+                <li>
+                    <a class="social-button" href="/img/insta-icon.svg"><img src="/img/insta-icon.svg" alt="Инстаграм"></a>
+                </li>
             </ul>
         </div>
         <div class="last-text">
