@@ -13,8 +13,10 @@ body {
     font-size: 16px;
     line-height: 30px;
     background-color: #eeeeee;
-    text-transform: uppercase;
     list-style: none;
+} 
+.main-navigation {
+ text-transform: uppercase;   
 }
 
 .modal_modal-feedback {
@@ -151,5 +153,21 @@ h3 {
 }
 
 .social-button {
-  background-color: beige;
-  }
+    display: inline-block;
+    margin: 10px;
+    width: 78px;
+    height: 78px;
+    background: #e1e1e1;
+    border-radius: 50%;
+    
+}
+.social-button:hover {
+   background: #e74246; 
+}
+.info b {
+   text-transform: uppercase; 
+}
+
+.items a{
+    color: black;
+}
