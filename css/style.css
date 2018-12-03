@@ -164,7 +164,7 @@ h3 {
 
 .social-button {
     color: white;
-   
+
     text-align: center;
     float: left;
     margin: 10px;
@@ -174,10 +174,11 @@ h3 {
     border-radius: 50%;
 }
 
-.social-icon{
+.social-icon {
     fill: white;
-    margin: 30px ;
+    margin: 29px 3px;
 }
+
 .social-button:hover {
     background: #e74246;
 }
@@ -203,5 +204,36 @@ h3 {
 .sidebar legend {
     text-transform: uppercase;
     font-weight: 700;
+}
+    
 
+
+.button-grey {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 19px 89px 19px 89px;
+    margin: 0px;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    border: none;
+}
+
+.button-grey:hover,
+.button-grey:focus,
+.button-grey:active {
+    background-color: #dfdfdf;
+}
+
+.main-navigation {
+    display: inline;
+}
+
+.cart-navigation {
+    margin: auto;
+    padding: 10px 10px 10px 10px;
 }
