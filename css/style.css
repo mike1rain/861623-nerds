@@ -161,16 +161,23 @@ h3 {
     text-transform: uppercase;
 }
 
+
 .social-button {
+    color: white;
+   
     text-align: center;
     float: left;
-    margin-right: 10px;
+    margin: 10px;
     width: 78px;
     height: 78px;
     background: #e1e1e1;
     border-radius: 50%;
 }
 
+.social-icon{
+    fill: white;
+    margin: 30px ;
+}
 .social-button:hover {
     background: #e74246;
 }
