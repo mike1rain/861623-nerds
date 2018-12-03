@@ -64,6 +64,7 @@ a {
 .button {
     color: white;
     font: inherit;
+    font-weight: 600;
     padding: 10px 10px 10px 10px;
     margin: 0px;
     border-radius: 2px;
@@ -76,18 +77,18 @@ a {
 }
 
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
     background-color: #e74246;
 }
 
 .button:active {
-    color: 0 0 0 30;
+    color: rgba(255, 255, 255, 0.302);
     background-color: #d7373b;
 }
 
 .button-green {
     font: inherit;
+    font-weight: 600;
     padding: 10px 10px 10px 10px;
     border-radius: 2px;
     text-align: center;
@@ -100,18 +101,18 @@ a {
 }
 
 .button-green:hover,
-.button-green:focus,
-.button-green:active {
-    color: 0 0 0 30;
+.button-green:focus {
     background-color: #00bc6c;
 }
 
 .button-green:active {
+    color: rgba(255, 255, 255, 0.302);
     background-color: #00aa62;
 }
 
 .button-yellow {
     font: inherit;
+    font-weight: 600;
     padding: 10px 10px 10px 10px;
     border-radius: 2px;
     text-align: center;
@@ -124,14 +125,38 @@ a {
 }
 
 .button-yellow:hover,
-.button-yellow:focus,
-.button-yellow:active {
-    color: 0 0 0 30;
+.button-yellow:focus {
     background-color: #eab534;
 }
 
 .button-yellow:active {
+     color: rgba(255, 255, 255, 0.302);
     background-color: #e5a722;
+}
+
+.button-grey {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 19px 89px 19px 89px;
+    margin: 0px;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    border: none;
+}
+
+.button-grey:hover {
+    background-color: #dfdfdf;
+}
+
+.button-grey:active {
+    color: rgba(0, 0, 0, 0.302);
+    background-color: #d5d5d5;
+
 }
 
 .modal_modal-feedback {
@@ -201,32 +226,16 @@ h3 {
     padding-left: 300px;
 }
 
+.sidebar {
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
 .sidebar legend {
     text-transform: uppercase;
     font-weight: 700;
-}
-    
 
-
-.button-grey {
-    color: black;
-    font-weight: 700;
-    font-size: 16px;
-    padding: 19px 89px 19px 89px;
-    margin: 0px;
-    border-radius: 2px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    border-radius: 2px;
-    background-color: #eeeeee;
-    border: none;
-}
-
-.button-grey:hover,
-.button-grey:focus,
-.button-grey:active {
-    background-color: #dfdfdf;
 }
 
 .main-navigation {
