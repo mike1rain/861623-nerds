@@ -1,36 +1,75 @@
-/*body {
+body {
     margin: 0;
     padding: 0;
-
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 400;
     color: black;
 }
+
 .main-header {
-   color: #ffffff;
+    color: black;
     font-size: 16px;
     line-height: 30px;
     background-color: #eeeeee;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     list-style: none;
+}
+
+.modal_modal-feedback {
+    display: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+}
+
+.site-navigation {
+    color: black;
+}
+
+.site-navigation a,
+.cart-navigation a {
+    color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart-navigation a:hover,
+.cart-navigation a:focus {
+    color: #fb5659;
 }
 
 .button {
     font: inherit;
-
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    border-radius: 2px;
     text-align: center;
     color: white;
     vertical-align: middle;
     text-transform: uppercase;
 
-    background-color: #eb7f82;
+    background-color: #fb565a;
     border: none;
 }
 
 .button:hover,
 .button:focus,
+.button:active {
+    background-color: #e74246;
+}
+
 .button:active {
     color: 0 0 0 30;
     background-color: #d7373b;
@@ -38,7 +77,8 @@
 
 .button-green {
     font: inherit;
-
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -52,12 +92,17 @@
 .button-green:focus,
 .button-green:active {
     color: 0 0 0 30;
+    background-color: #00bc6c;
+}
+
+.button-green:active {
     background-color: #00aa62;
 }
 
 .button-yellow {
     font: inherit;
-
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
     text-align: center;
     color: white;
     vertical-align: middle;
@@ -71,13 +116,40 @@
 .button-yellow:focus,
 .button-yellow:active {
     color: 0 0 0 30;
+    background-color: #eab534;
+}
+
+.button-yellow:active {
     background-color: #e5a722;
 }
 
-.services-item,
-.site-navigation,
-.user-navigation,
-.cart-navigation,
-.client-logo {
-    list-style: none;
+.modal_modal-feedback {
+    display: none;
 }
+
+fieldset {
+    border: none;
+}
+
+h1 {
+    color: black;
+    font-size: 55px;
+    text-transform: none;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.legend {
+    text-transform: uppercase;
+}
+
+.social-button {
+  background-color: beige;
+  }

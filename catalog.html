@@ -34,7 +34,7 @@
             <form class="filters" method="get" action="#">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                 <section>
-                    <h2>СТОИМОСТЬ:</h2>
+                    <b>СТОИМОСТЬ:</b>
                     <!--Форма-->
                     <br>
                 </section>
@@ -42,15 +42,15 @@
                     <legend>Сетка:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
+                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
                             <label for="adaptive">Адаптивная</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
+                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
                             <label for="fixed">Фиксированная</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
+                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
                             <label for="rubber">Резиновая</label>
                         </li>
                     </ul>
@@ -59,19 +59,19 @@
                     <legend>Особенности:</legend>
                     <ul>
                         <li class="grid-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
                             <label for="filter-slider">Слайдер</label>
                         </li>
                         <li class="grid-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
                             <label for="filter-features">Блок приемуществ</label>
                         </li>
                         <li class="grid-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                             <label for="filter-gallery">Галерея</label>
                         </li>
                         <li class="grid-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
+                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
                             <label for="filter-cart">Корзина</label>
                         </li>
                     </ul>
@@ -159,11 +159,10 @@
             <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
         <section>
-            <h2>Как до нас добраться?</h2>
-            <!--Место для карты-->
-
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <address>191186, Санкт-Петербург,
+            <h2 class="visually-hidden">Как до нас добраться?</h2>
+            <a><img src="/img/map.jpg" alt="карта"></a>
+            <h2 class="visually-hidden">NЁRDS DESIGN STUDIO</h2>
+            <address class="visually-hidden">191186, Санкт-Петербург,
                 ул. Б. Конюшенная, д. 19/8<br>
                 тел. +7 (812) 275-75-75</address>
         </section>
@@ -171,7 +170,7 @@
 
     <footer class="main-footer">
         <div class="footer-social">
-            <b>Давайте дружить</b>
+
             <ul>
                 <li><a class="social-button" href="img/vk-icon.svg"><span class="visually-hidden">Вконтакте</span></a></li>
                 <li><a class="social-button" href="img/fb-icon.svg"><span class="visually-hidden">Фейсбук</span></a></li>
