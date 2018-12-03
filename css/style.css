@@ -17,6 +17,10 @@ body {
     list-style: none;
 }
 
+.inner-h1 {
+    text-align: center
+}
+
 .main-navigation {
     text-transform: uppercase;
 }
@@ -32,12 +36,15 @@ body {
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 .catalog-item-title a {
     color: black;
 }
+
 .site-navigation {
     color: black;
 }
@@ -54,7 +61,7 @@ a {
     color: #fb5659;
 }
 
-.button  {
+.button {
     color: white;
     font: inherit;
     padding: 10px 10px 10px 10px;
