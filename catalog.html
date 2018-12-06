@@ -10,156 +10,179 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <div class="header"><a class="main-header-logo" href="index.html">
-                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип для студии"></a>
-            </div>
-            <ul class="site-navigation">
-                <li> <a href=studio.html>Студия</a></li>
-                <li> <a href=clients.html>Клиенты</a></li>
-                <li> <a href=catalog.html>Магазин</a></li>
-                <li> <a href=contacts.html>Контакты</a></li>
-            </ul>
-             <ul class="cart-navigation">
-                <li class="cart-link"> <img src="img/cart-icon.svg" alt="Корзина">
-                    <a href=studio.html>Корзина</a>
-                </li>
-            </ul>
-        </nav>
-        <h1 class="inner-h1">Магазин готовых шаблонов</h1>
+    <!--Шапка сайта-->
+    <header class="site-header">
+        <div class="container">
+            <nav class="site-navigation">
+                <a class="site-header-logo" href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип для студии"> </a>
+                <div class="site-navigation-wrapper">
+                    <ul class="site-navigation">
+                        <li> <a href=studio.html>Студия</a></li>
+                        <li> <a href=clients.html>Клиенты</a></li>
+                        <li> <a href=catalog.html>Магазин</a></li>
+                        <li> <a href=contacts.html>Контакты</a></li>
+                    </ul>
+                    <ul class="cart-navigation">
+                        <li class="cart-link"> <img src="img/cart-icon.svg" alt="Корзина">
+                            <a href=studio.html>Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <h2 class="shop-page">Магазин готовых шаблонов</h2>
     </header>
     <main class="container">
-        <aside class="sidebar">
-            <form class="filters" method="get" action="#">
-                <h2 class="visually-hidden">Фильтр товаров</h2>
-                <fieldset>
-                    <legend>Стоимость:</legend>
-                    <input type="range" min="1" max="14" step="1">
-                </fieldset>
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
-                            <label for="adaptive">Адаптивная</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
-                            <label for="fixed">Фиксированная</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
-                            <label for="rubber">Резиновая</label>
-                        </li>
+
+
+        <div class="catalog-columns">
+            <!--Сайдбар-->
+            <aside class="sidebar">
+                <form class="filters" method="get" action="#">
+                    <h2 class="visually-hidden">Фильтр товаров</h2>
+                    <fieldset>
+                        <legend>Стоимость:</legend>
+                        <input type="range" min="1" max="14" step="1">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Сетка:</legend>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
+                                <label for="adaptive">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
+                                <label for="fixed">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
+                                <label for="rubber">Резиновая</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <ul>
+                            <li class="grid-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="grid-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                                <label for="filter-features">Блок приемуществ</label>
+                            </li>
+                            <li class="grid-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li class="grid-option">
+                                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
+                                <label for="filter-cart">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button-grey" type="submit">Показать</button>
+                </form>
+            </aside>
+
+
+
+
+
+            <!--Каталог товаров-->
+            <div class="catalog">
+                <section class="items">
+                    <h2 class="visually-hidden">Товары</h2>
+                    <div class="catalog-items">
+                        <ul class="catalog-list">
+
+                            <li class="catalog-item">
+                                <div class="catalog-item-hover">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Sedona
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-item">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Второй сайт
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-pink.jpg" width="360" height="576" alt="Второй сайт">
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-item">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Третий сайт
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Третий сайт">
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-item">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Четвертый сайт
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-mishka.jpg" width="360" height="576" alt="Четвертый сайт">
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-item-hover">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Пятый сайт
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для туристов</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-aplus.jpg" width="360" height="576" alt="Пятый сайт">
+                            </li>
+                            <li class="catalog-item">
+                                <div class="catalog-item-hover">
+                                    <h3 class="catalog-item-title">
+                                        <a href="catalog-item.html">Шестой сайт
+                                        </a>
+                                    </h3>
+                                    <p class="catalog-item-text">Информационный сайт для крафтового пива</p>
+                                    <a href="#" class="button">9900 P</a>
+                                </div>
+                                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шестой сайт">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Пагинация-->
+                    <ul class="pagination-list">
+                        <li class="pagination-item pagination-item-current"><a>1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                        <li class="pagination-item"><a href="#">Следующая</a></li>
                     </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Особенности:</legend>
-                    <ul>
-                        <li class="grid-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
-                            <label for="filter-slider">Слайдер</label>
-                        </li>
-                        <li class="grid-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
-                            <label for="filter-features">Блок приемуществ</label>
-                        </li>
-                        <li class="grid-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-                            <label for="filter-gallery">Галерея</label>
-                        </li>
-                        <li class="grid-option">
-                            <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
-                            <label for="filter-cart">Корзина</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button class="button-grey" type="submit">Показать</button>
-            </form>
-        </aside>
-        <div class="catalog">
-            <section class="items">
-                <h2 class="visually-hidden">Товары</h2>
-                <ul>
-                    <li class="catalog-item">
-                        <div class="catalog-item-hover">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Sedona
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для туристов</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-item">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Второй сайт
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для туристов</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-pink.jpg" width="360" height="576" alt="Второй сайт">
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-item">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Третий сайт
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для туристов</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-barbershop.jpg" width="360" height="576" alt="Третий сайт">
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-item">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Четвертый сайт
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для туристов</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-mishka.jpg" width="360" height="576" alt="Четвертый сайт">
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-item-hover">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Пятый сайт
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для туристов</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-aplus.jpg" width="360" height="576" alt="Пятый сайт">
-                    </li>
-                    <li class="catalog-item">
-                        <div class="catalog-item-hover">
-                            <h3 class="catalog-item-title">
-                                <a href="catalog-item.html">Шестой сайт
-                                </a>
-                            </h3>
-                            <p class="catalog-item-text">Информационный сайт для крафтового пива</p>
-                            <a href="#" class="button">9900 P</a>
-                        </div>
-                        <img src="img/img-kvast.jpg" width="360" height="576" alt="Шестой сайт">
-                    </li>
-                </ul>
-            </section>
+                </section>
+            </div>
+
         </div>
-        <ul class="pagination-list">
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
+
+
+        <!--Карта-->
         <section>
             <h2 class="visually-hidden">Как до нас добраться?</h2>
-            <a><img src="/img/map.jpg" alt="карта"></a>
+            <a><img src="#" alt="карта"></a>
             <h2 class="visually-hidden">NЁRDS DESIGN STUDIO</h2>
             <address class="visually-hidden">191186, Санкт-Петербург,
                 ул. Б. Конюшенная, д. 19/8<br>
@@ -167,10 +190,10 @@
         </section>
     </main>
 
+    <!--Футер-->
     <footer class="main-footer">
         <div class="footer-social">
-
-             <ul>
+            <ul>
                 <li>
                     <a class="social-button" href="#">
                         <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
@@ -201,9 +224,10 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+
+    <!--Модальное окно-->
     <form class="modal_modal-feedback" method="post" action="https://echo.htmlacademy.ru">
         <h2>Напишите нам</h2>
-
         <p>
             <label for="user-name">Ваше Имя</label>
             <input id="user-name" required type="text" name="login" placeholder="Ваше Имя">
