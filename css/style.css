@@ -18,7 +18,7 @@ body {
 /*Хедер*/
 .main-header {
     margin-bottom: 65px;
-    padding-top:  85px;
+    padding-top: 85px;
     padding-bottom: 80px;
     color: black;
     font-size: 16px;
@@ -291,42 +291,9 @@ fieldset {
 
 
 
-/*Соц.сети*/
-.social-button {
-    color: white;
-    text-align: center;
-    float: left;
-    margin: 10px;
-    width: 78px;
-    height: 78px;
-    background: #e1e1e1;
-    border-radius: 50%;
-}
-
-.social-icon {
-    fill: white;
-    margin: 29px 3px;
-}
-
-.social-button:hover {
-    background: #e74246;
-}
-
-.social-button:active {
-    background: #d7373b;
-}
 
 
-.sidebar {
-    font-size: 16px;
-    line-height: 20px;
-}
 
-.sidebar legend {
-    text-transform: uppercase;
-    font-weight: 700;
-
-}
 
 
 
@@ -393,7 +360,67 @@ fieldset {
 }
 
 
+.sidebar {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.sidebar legend {
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
 
 
 
 /*футер*/
+.main-footer {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+}
+
+/*Соц.сети*/
+
+
+.footer-social {
+    width: 260px;
+    display: flex;
+    padding:25px;
+
+
+}
+
+.social-button {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    background: #e1e1e1;
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: white;
+    padding: 30px;
+}
+
+
+.social-button:hover {
+    background: #e74246;
+}
+
+.social-button:active {
+    background: #d7373b;
+}
+
+.last-text {
+    width: 760px;
+    margin-left: 140px;
+}
+
+.last-text p {
+    padding-bottom: 10px;
+}
