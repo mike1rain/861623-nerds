@@ -13,8 +13,10 @@ body {
 
 
 
+
+
 /*Хедер*/
-.site-header {
+.main-header {
     margin-bottom: 65px;
     padding: 20px;
     color: black;
@@ -24,18 +26,7 @@ body {
     list-style: none;
 }
 
-.site-navigation-wrapper .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.site-navigation-wrapper {
-    width: 100%;
-    margin-bottom: 60px;
-
-}
-
-.site-navigation {
+.main-navigation {
     text-transform: uppercase;
     color: black;
     display: flex;
@@ -44,15 +35,27 @@ body {
     margin: 0;
     padding: 0;
     align-items: center;
+    list-style: none;
+
+
+}
+
+.main-navigation a:hover {
+    color: red;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 
     list-style: none;
 }
 
-.site-navigation a:hover {
-    color: red;
-}
-
-.site-navigation a,
+.main-navigation a,
 .cart-navigation a {
     color: black;
 }
@@ -62,6 +65,37 @@ body {
     width: 160px;
     height: 70px;
 }
+
+.cart-navigation {
+    width: 160px;
+    align-items: flex-end;
+
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+
+    list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
