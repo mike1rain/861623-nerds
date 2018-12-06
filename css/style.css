@@ -18,7 +18,8 @@ body {
 /*Хедер*/
 .main-header {
     margin-bottom: 65px;
-    padding: 20px;
+    padding-top:  85px;
+    padding-bottom: 80px;
     color: black;
     font-size: 16px;
     line-height: 30px;
