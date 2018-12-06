@@ -177,16 +177,7 @@ fieldset {
 
 .items a {
     text-decoration: none;
-
 }
-
-
-.last-text p {
-    padding-left: 300px;
-}
-
-
-
 
 
 
@@ -303,7 +294,6 @@ fieldset {
 /*Соц.сети*/
 .social-button {
     color: white;
-
     text-align: center;
     float: left;
     margin: 10px;
