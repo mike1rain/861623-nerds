@@ -70,7 +70,9 @@ body {
     fill: #6e6e6e;
 }
 
-.cart-icon:hover {
+.cart-icon:hover,
+.cart-icon:focus
+{
     fill: #e74246;
 }
 .main-navigation-wrapper {
