@@ -302,19 +302,22 @@ fieldset {
 
 
 
-.pagination-list{
+.pagination-list {
      display: flex;
+    text-decoration: none;
+    color:black;
+    
 }
 
 .pagination-item {
-    fill:black;
+    color:black;
     margin-right: 20px;
 }
 
 /*Каталог*/
 .catalog-columns {
     display: flex;
-    
+    justify-content:space-between;
 }
 
 .catalog-list {
@@ -332,7 +335,7 @@ fieldset {
 .catalog {
     width: 760px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .catalog-item-title a {
