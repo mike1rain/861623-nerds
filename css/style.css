@@ -149,8 +149,8 @@ fieldset {
 
 .clients-list ul {
     display: flex;
-    justify-content: flex-start;
-    padding: 50px 80px;
+      justify-content: space-between;
+
 }
 
 .client-logo {
@@ -265,9 +265,9 @@ fieldset {
 }
 
 .button-grey:hover,
-.button-yellow:focus {
-    border: 0px;
+.button-grey:focus {
     background-color: #dfdfdf;
+     outline: none;
 }
 
 .button-grey:active {
