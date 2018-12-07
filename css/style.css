@@ -283,14 +283,6 @@ fieldset {
 
 
 
-
-
-
-
-
-
-
-
 /*Сервисы*/
 .services {
     margin-bottom: 160px;
@@ -322,7 +314,7 @@ fieldset {
 /*Каталог*/
 .catalog-columns {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .catalog-list {
@@ -330,6 +322,7 @@ fieldset {
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -338,6 +331,8 @@ fieldset {
 
 .catalog {
     width: 760px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .catalog-item-title a {
@@ -347,7 +342,6 @@ fieldset {
 .catalog-item {
     width: 360px;
     margin-bottom: 20px;
-    margin-right: 20px;
 }
 
 .catalog-item:nth-child(3n) {
