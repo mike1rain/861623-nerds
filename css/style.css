@@ -597,6 +597,7 @@ fieldset {
 .user-info-left {
     width: 100px
 }
+
 .user-info-right {
     width: 100px;
 }
@@ -799,6 +800,14 @@ label {
 
 .info-li li {
     width: 110px;
+}
+
+.info-li b {
+    font-size: 45px;
+}
+
+.info-li sup {
+    font-size: 25px;
 }
 
 .info-2 {
