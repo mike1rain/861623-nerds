@@ -147,12 +147,6 @@ h3 {
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
 fieldset {
     border: none;
 }
@@ -326,7 +320,17 @@ fieldset {
 
 .services-item {
     width: 300px;
+      display: flex;
+    flex-direction: column;
+
 }
+.sevices-picture {
+    order: -1;
+}
+
+
+
+
 
 /*Каталог*/
 
