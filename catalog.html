@@ -40,23 +40,36 @@
             <aside class="sidebar">
                 <form class="filters" method="get" action="#">
                     <h2 class="visually-hidden">Фильтр товаров</h2>
-                    <fieldset>
+                    <fieldset class="filter-item">
                         <legend>Стоимость:</legend>
-                        <input type="range" min="1" max="14" step="1">
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </div>
                     </fieldset>
+
                     <fieldset>
                         <legend>Сетка:</legend>
                         <ul>
                             <li class="filter-option">
-                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="adaptive" id="adaptive">
                                 <label for="adaptive">Адаптивная</label>
                             </li>
                             <li class="filter-option">
-                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="fixed" id="fixed">
                                 <label for="fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option">
-                                <input class="filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="site-type" value="rubber" id="rubber">
                                 <label for="rubber">Резиновая</label>
                             </li>
                         </ul>
@@ -64,20 +77,20 @@
                     <fieldset>
                         <legend>Особенности:</legend>
                         <ul>
-                            <li class="grid-option">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider">
                                 <label for="filter-slider">Слайдер</label>
                             </li>
-                            <li class="grid-option">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features" id="filter-features">
                                 <label for="filter-features">Блок приемуществ</label>
                             </li>
-                            <li class="grid-option">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                                 <label for="filter-gallery">Галерея</label>
                             </li>
-                            <li class="grid-option">
-                                <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-cart">
                                 <label for="filter-cart">Корзина</label>
                             </li>
                         </ul>
@@ -94,9 +107,10 @@
             <div class="catalog">
                 <section class="items">
                     <h2 class="visually-hidden">Товары</h2>
+                    
                     <div class="catalog-items">
+                       
                         <ul class="catalog-list">
-
                             <li class="catalog-item">
                                 <div class="catalog-item-hover">
                                     <h3 class="catalog-item-title">
@@ -108,8 +122,8 @@
                                 </div>
                                 <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA">
                             </li>
-                           
-                                <li class="catalog-item">
+
+                            <li class="catalog-item">
                                 <div class="catalog-item">
                                     <h3 class="catalog-item-title">
                                         <a href="catalog-item.html">Второй сайт
@@ -155,11 +169,11 @@
                                     <p class="catalog-item-text">Информационный сайт для туристов</p>
                                     <a href="#" class="button">9900 P</a>
                                 </div>
-                                
+
                                 <img src="img/img-aplus.jpg" width="360" height="576" alt="Пятый сайт">
                             </li>
-                            
-                            
+
+
                             <li class="catalog-item">
                                 <div class="catalog-item">
                                     <h3 class="catalog-item-title">
@@ -225,33 +239,12 @@
                 </a>
             </li>
         </ul>
-
-
         <div class="last-text">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
-
     </footer>
 
-    <!--Модальное окно-->
-    <form class="modal_modal-feedback" method="post" action="https://echo.htmlacademy.ru">
-        <h2>Напишите нам</h2>
-        <p>
-            <label for="user-name">Ваше Имя</label>
-            <input id="user-name" required type="text" name="login" placeholder="Ваше Имя">
-        </p>
-        <p>
-            <label for="user-email">Ваш email</label>
-            <input id="user-email" required type="text" name="email" placeholder="Ваш email">
-        </p>
-        <p>
-            <label for="user-text">Текст письма</label>
-            <textarea id="user-text" name="user-text" placeholder="Текст письма"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-        <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-    </form>
 
 </body>
 
