@@ -489,8 +489,6 @@ fieldset {
 
 
 
-
-
 /*футер*/
 .main-footer {
     display: flex;
@@ -546,7 +544,7 @@ fieldset {
 .modal-form {
     position: absolute;
     left: 25%;
-    bottom: -180%;
+    bottom: -200%;
     box-sizing: border-box;
     width: 960px;
     padding-left: 80px;
@@ -810,6 +808,11 @@ label {
     font-size: 25px;
 }
 
+
+.info-li p {
+     line-height: 18px;
+   
+}
 .info-2 {
     width: 360px;
 }
