@@ -506,11 +506,14 @@ fieldset {
     margin-right: 10px;
     background: #e1e1e1;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-icon {
     fill: white;
-    padding: 30px;
+    
+    
 }
 
 
