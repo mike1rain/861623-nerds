@@ -544,20 +544,19 @@ fieldset {
     padding-right: 80px;
     padding-top: 60px;
     padding-bottom: 60px;
-    border: 2px solid #d7dcde;
+  
     background-color: white;
     box-shadow: 0px 20px 40px rgba(0, 1, 1, .5)
 }
 .modal-close-btn {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 6px;
-    right: 0px;
+    position: absolute; 
+    width: 0px;
+    height: 20px;
+    top: 15px;
+    right:2px;
     font-size: 0;
     border: 0;
     padding: 30px;
-    border-radius: 50%;
     outline: 0;
     cursor: pointer;
 }
@@ -571,6 +570,7 @@ fieldset {
     background-color: red;
     top: 18px;
     left: 9px;
+
 }
 
 .modal-close-btn::before {
