@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/favicon.png" type="image/jpg">
     <link href="normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -34,9 +34,11 @@
         <section class="slider">
             <div class="container">
                 <h1 class="visually-hidden">Преимущества</h1>
-                <div class="slider-controls"><i class="active"></i>
-                    <i></i>
-                    <i></i> </div>
+                <div class="slider-controls">
+                    <button type="button" class="active"></button>
+                    <button type="button"></button>
+                    <button type="button"></button> 
+                    </div>
 
                
                     <ul class="slider-list">
@@ -84,8 +86,6 @@
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a href="#" class="button-green">Заказать</a>
                 </li>
-
-
                 <li class="services-item">
                     <h3>Презентации</h3>
                     <p class="sevices-picture">
@@ -96,8 +96,8 @@
                 </li>
             </ul>
         </section>
-        <div class="info-block">
-            <section class="info">
+        <section class="info-block">
+            <div class="info">
                 <h2>Мы — маленькая, но гордая
                     дизайн-студия из Краснодара. </h2>
                 <p>Исповедуем принципы минимализма и чистоты.<br> Ставим математический расчет превыше креатива.<br> Работаем не покладая рук, как роботы.</p>
@@ -107,20 +107,19 @@
                     <li> Мобильных приложений для iOS и Android</li>
                     <li> Слайдшоу и видео для корпоративных презентаций</li>
                 </ul>
-            </section>
-
-            <section class="info-2">
+            </div>
+            <div class="info-stats">
                 <h2 class="visually-hidden">Немного о нас</h2>
 
                 <img src="/img/nerds-illustration.png" width="360" height="208" alt="Логотип студии">
                 <b> с 2004 года Любим точность во всем:</b>
-                <ul class="info-li">
+                <ul class="info-digits">
                     <li><b>146<sup>%</sup></b> <p>Уровень самоотдачи</p></li>
                     <li><b>100<sup>%</sup></b> <p>Соблюдение сроков</p></li>
                     <li><b>50<sup>%</sup></b> <p>Минимальная предоплата</p></li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
         <section class="clients">
 
             <h2 class="visually-hidden">Клиенты</h2>
@@ -173,39 +172,32 @@
                 </a>
             </li>
         </ul>
-
-
         <div class="last-text">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
-
     </footer>
 
-    <div class="modal-form">
+    <section class="modal-form">
         <button class="modal-close-btn" type="button"></button>
-        <div class="modal-content">
+        <h3>Напишите нам</h3>
             <form action="#" class="text-form" method="post">
-             
-                    <div class="user-info-left">
+                    <p class="user-info-left">
                         <label for="name">Ваше имя:</label>
                         <input type="text" id="#name" name="name" placeholder="Представьтесь, пожалуйста">
-                    </div>
-                    <div class="user-info-right">
+                </p>
+                    <p class="user-info-right">
                         <label for="email">Ваше e-mail:</label>
                         <input type="email" id="#email" name="email" placeholder="Для отправки ответа">
-                    </div>
+                </p>
              
-                <div class="user-letter">
+                <p class="user-letter">
                     <label for="text">Текст письма</label>
-                    <br>
                     <textarea name="text" id="#text" rows="5" placeholder="В свободной форме"></textarea>
-                </div>
+                </p>
                 <button class="button" type="submit">Отправить</button>
-
             </form>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>
