@@ -356,7 +356,7 @@ fieldset {
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
-    
+
 }
 
 .catalog {
@@ -521,8 +521,8 @@ fieldset {
 
 .social-icon {
     fill: white;
-    
-    
+
+
 }
 
 
@@ -548,6 +548,8 @@ fieldset {
 
 .modal-form {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
     left: 25%;
     bottom: -200%;
     box-sizing: border-box;
@@ -556,20 +558,22 @@ fieldset {
     padding-right: 80px;
     padding-top: 60px;
     padding-bottom: 60px;
-  
+
     background-color: white;
     box-shadow: 0px 20px 40px rgba(0, 1, 1, .5)
 }
+
 .modal-close-btn {
-    position: absolute; 
-    width: 0px;
-    height: 20px;
-    top: 15px;
-    right:2px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    right: 30px;
     font-size: 0;
     border: 0;
-    padding: 30px;
     outline: 0;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -598,6 +602,7 @@ fieldset {
 }
 
 .user-info-right {
+
     width: 100px;
 }
 
@@ -610,25 +615,29 @@ label {
     margin-bottom: 10px;
 }
 
+.text-form {
+    display: inline-flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 
 .user-info-left input {
-    width: 320px;
+    box-sizing: border-box;
+    width: 360px;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-
     padding: 10px 15px;
     border: 2px solid #d7dcde;
     border-radius: 4px;
 }
 
-.user-info-right input {
-    width: 320px;
-
+.user-info-right input{
+    width: 360px;
+    box-sizing: border-box;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-
     padding: 10px 15px;
     border: 2px solid #d7dcde;
     border-radius: 4px;
@@ -645,13 +654,6 @@ label {
     margin-bottom: 48px;
     resize: none;
 }
-
-.modal-form-show {
-    display: block;
-
-}
-
-
 
 
 /*Слайдер*/
@@ -805,9 +807,10 @@ label {
 
 
 .info-digits p {
-     line-height: 18px;
-   
+    line-height: 18px;
+
 }
+
 .info-stats {
     width: 360px;
 }
