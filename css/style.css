@@ -795,6 +795,7 @@ label {
 
 .info-digits li {
     width: 110px;
+    padding-right: 40px;
 }
 
 .info-digits b {
