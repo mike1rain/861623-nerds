@@ -370,7 +370,7 @@ fieldset {
     color: black;
 }
 
-.catalog-item {
+.catalog-item:hover .item-info{
     width: 360px;
     padding: 20px;
 
@@ -383,7 +383,7 @@ fieldset {
 .item {
     width: 360px;
     margin-bottom: 40px;
-
+    position: relative;
 
 }
 
@@ -396,14 +396,12 @@ fieldset {
     width: 360px;
     border: 0px;
     z-index: 1001;
-    bottom: 20px;
+    bottom: 0px;
     position: absolute;
 }
-
-.item-info:hover {
+ .item-info:hover {
     opacity: 1;
     width: 360px;
-
     border: 0px;
     z-index: 1001;
     padding: 40px 60px 20px 60px;
