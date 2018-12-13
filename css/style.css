@@ -370,57 +370,42 @@ fieldset {
     color: black;
 }
 
+/*Карточка*/
+.card-style {
+    width: 360px;
+    height: 577px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+}
 
 .catalog-item {
-    margin-top: 20px;
-}
-
-
-.catalog-item:hover .item-info{
-    width: 360px;
-    padding: 20px;
-
-
-}
-
-
-/*Карточка*/
-
-.browser{
-    width: 360px;
+    width: 362px;
     height: 576px;
     padding-top: 40px;
     background-color: #eeeeee;
-    border-radius: 6px; 
-}
-
-.browser:hover {
-    background-color: #4d4d4d;
-}
-
-
-.item {
-    width: 360px;
+    border-radius: 6px;
     margin-bottom: 40px;
     position: relative;
 
 }
 
-.item:hover {
+.catalog-item:hover {
+    background-color: #4d4d4d;
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .item-info {
     opacity: 0;
     width: 360px;
-    border: 0px;
-    z-index: 1001;
+    border: 1px solid #eeeeee;
+    z-index: 100;
     bottom: 0px;
     position: absolute;
 }
- .item-info:hover {
+
+.catalog-item:hover .item-info {
     opacity: 1;
-    width: 360px;
+    width: 362px;
     border: 0px;
     z-index: 1001;
     padding: 40px 60px 20px 60px;
@@ -431,7 +416,29 @@ fieldset {
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
+.catalog-item::after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
 
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    content: "";
+    box-shadow:
+        -20px 0 0 #fff,
+        20px 0 0 #fff;
+
+}
 
 
 
