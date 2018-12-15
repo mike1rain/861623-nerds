@@ -513,7 +513,7 @@ fieldset {
     width: 27px;
     height: 23px;
 
-    background-image: url("img/checkbox-off.svg");
+    background-image: url("./img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -525,7 +525,7 @@ fieldset {
     left: -44px;
     width: 27px;
     height: 23px;
-    background-image: url("img/checkbox-on.svg");
+    background-image: url("./img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
