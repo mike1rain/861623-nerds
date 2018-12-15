@@ -84,12 +84,6 @@ body {
     list-style: none;
 }
 
-
-
-
-
-
-
 /*лишки, скрытие, заголовки и тд */
 
 .container {
@@ -171,7 +165,6 @@ fieldset {
         url("../img/divider.png");
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, repeat;
-
 }
 
 .client-logo {
@@ -301,7 +294,6 @@ fieldset {
     color: rgba(0, 0, 0, 0.302);
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d5d5d5;
-
 }
 
 
@@ -316,7 +308,6 @@ fieldset {
         url("../img/divider.png");
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, repeat;
-
 }
 
 .services-list {
@@ -332,7 +323,6 @@ fieldset {
     width: 300px;
     display: flex;
     flex-direction: column;
-
 }
 
 .sevices-picture {
@@ -356,14 +346,12 @@ fieldset {
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
-
 }
 
 .catalog {
     width: 760px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .catalog-item-title a {
@@ -386,7 +374,6 @@ fieldset {
     border-radius: 6px;
     margin-bottom: 40px;
     position: relative;
-
 }
 
 .catalog-item:hover {
@@ -437,22 +424,7 @@ fieldset {
     box-shadow:
         -20px 0 0 #fff,
         20px 0 0 #fff;
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Сайдбар*/
 
@@ -484,8 +456,6 @@ fieldset {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-
-
 }
 
 .filter-option label {
@@ -1044,3 +1014,37 @@ label {
     color: black;
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d5d5d5;
+}
+   
+
+
+.adress-on-map {
+    display: block;
+    align-items: center;
+    text-align: center;
+    content: "";
+    position: absolute;
+    bottom:-1920px;
+    left: 160px;
+    z-index: 10000;
+    width: 340px;
+
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+    padding: 30px;
+}
+    
+.adress-on-map a {
+    margin: 20px;
+}
+
+    
+.adress-on-map address {
+font-style: normal; 
+        margin: 20px;
+   color: grey;
+    font-size: 16px;
+    line-height: 24px;
+}
+
