@@ -1029,8 +1029,8 @@ fieldset {
     display: block;
     content: "";
     position: absolute;
-    bottom: -1920px;
-    left: 160px;
+    left: 10%;
+    margin-top: -350px;
     z-index: 3;
     width: 340px;
     align-items: center;
