@@ -589,62 +589,40 @@ fieldset {
 
 /*Модальное окно*/
 
-
 .modal-form {
+    width: 800px;
     z-index: 500;
+    color: black;
     position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    left: 25%;
-
-    bottom: 10%;
-    box-sizing: border-box;
-    width: 960px;
+    left: 15%;
+    top: 120px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    padding-top: 30px;
+    padding-bottom: 50px;
     background-color: white;
     box-shadow: 0px 20px 40px rgba(0, 1, 1, .5)
 }
 
-.modal-close-btn {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 30px;
-    right: 30px;
-    font-size: 0;
-    border: 0;
-    outline: 0;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.half-width-forms {
+    width: 535px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.modal-close-btn::before,
-.modal-close-btn::after {
-    position: absolute;
-    content: "";
-    width: 25px;
-    height: 5px;
-    background-color: red;
-    top: 18px;
-    left: 9px;
+.text-form input[type="text"],
+.text-form input[type="email"] {
+    display: inline;
+    box-sizing: border-box;
+    width: 360px;
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
 
-}
-
-.modal-close-btn::before {
-    transform: rotate(45deg)
-}
-
-.modal-close-btn::after {
-    transform: rotate(-45deg)
 }
 
 .user-info-left {
-    margin-left: -200px;
+
     width: 100px
 }
 
@@ -653,25 +631,15 @@ fieldset {
     width: 100px;
 }
 
-label {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 10px;
+.user-letter {
+    width: 100px;
 }
 
-.text-form {
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
 .user-info-left input {
     box-sizing: border-box;
     width: 360px;
-    font-weight: 500;
+
     font-size: 14px;
     line-height: 18px;
     padding: 10px 15px;
@@ -680,10 +648,10 @@ label {
 }
 
 .user-info-right input {
-    margin-left: -65px;
+
     width: 360px;
     box-sizing: border-box;
-    font-weight: 500;
+
     font-size: 14px;
     line-height: 18px;
     padding: 10px 15px;
@@ -692,7 +660,7 @@ label {
 }
 
 .user-letter textarea {
-    font-weight: 500;
+
     font-size: 14px;
     line-height: 18px;
     padding: 10px 15px;
@@ -701,6 +669,43 @@ label {
     width: 760px;
     margin-bottom: 48px;
     resize: none;
+}
+
+
+
+
+.modal-close {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+
+    font-size: 0;
+
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 30;
+    right: 70px;
+
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "";
+
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    background-color: red;
+    top: 18px;
+    left: 10px;}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
 }
 
 
@@ -1015,36 +1020,35 @@ label {
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d5d5d5;
 }
-   
+
 
 
 .adress-on-map {
     display: block;
-    align-items: center;
-    text-align: center;
     content: "";
     position: absolute;
-    bottom:-1920px;
+    bottom: -1920px;
     left: 160px;
-    z-index: 10000;
+    z-index: 3;
     width: 340px;
+    align-items: center;
+    text-align: center;
 
     background-color: white;
     box-sizing: border-box;
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
     padding: 30px;
 }
-    
+
 .adress-on-map a {
     margin: 20px;
 }
 
-    
+
 .adress-on-map address {
-font-style: normal; 
-        margin: 20px;
-   color: grey;
+    font-style: normal;
+    margin: 20px;
+    color: grey;
     font-size: 16px;
     line-height: 24px;
 }
-
