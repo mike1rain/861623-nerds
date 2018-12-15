@@ -33,6 +33,11 @@ body {
     color: #e74246;
 }
 
+.main-navigation a:active {
+    color: grey;
+
+}
+
 .site-navigation {
     display: flex;
     justify-content: space-between;
@@ -46,8 +51,20 @@ body {
 
 .main-navigation a,
 .cart-navigation a {
+    font-weight: 500;
     color: black;
 }
+
+.active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 2px;
+    background-color: #fb565a;
+    margin: 0px 0px -37px;
+}
+
 
 .site-header-logo {
     order: 0;
@@ -56,11 +73,13 @@ body {
 }
 
 .site-header-logo:active {
+
     opacity: 0.3;
 }
 
 .cart-navigation {
     display: flex;
+
     justify-content: space-between;
     width: 120px;
 }
@@ -122,7 +141,7 @@ a {
     width: 760px;
 }
 
-.list li:before {
+.info-list li:before {
     content: "";
     display: inline-block;
     width: 25px;
@@ -162,15 +181,23 @@ fieldset {
     padding-top: 80px;
     padding-bottom: 80px;
     background-image:
-        url("../img/divider.png");
+        url("img/divider.png");
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, repeat;
 }
 
 .client-logo {
+    opacity: 0.3;
     width: 260px;
 }
 
+.client-logo:hover {
+    opacity: 1;
+}
+
+.client-logo:active {
+    opacity: 0.1;
+}
 
 .shop-page {
     text-align: center;
@@ -364,6 +391,8 @@ fieldset {
     height: 577px;
     background-color: white;
     border: 1px solid #eeeeee;
+    border-top: 0px;
+
 }
 
 .catalog-item {
@@ -378,13 +407,13 @@ fieldset {
 
 .catalog-item:hover {
     background-color: #4d4d4d;
+    border-top: 0px;
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
 }
 
 .item-info {
     opacity: 0;
     width: 360px;
-    border: 1px solid #eeeeee;
     z-index: 100;
     bottom: 0px;
     position: absolute;
@@ -393,7 +422,6 @@ fieldset {
 .catalog-item:hover .item-info {
     opacity: 1;
     width: 362px;
-    border: 0px;
     z-index: 1001;
     padding: 40px 60px 20px 60px;
     text-align: center;
@@ -459,15 +487,20 @@ fieldset {
 }
 
 .filter-option label {
+    opacity: 0.7;
     position: relative;
     display: block;
     cursor: pointer;
     user-select: none;
 }
 
+.filter-option label:hover {
+    opacity: 1;
+}
+
 .filter-input:hover + label,
 .filter-input:focus + label {
-    color: #663d15;
+    color: #4d4d4d;
 }
 
 .filter-input-checkbox + label::before {
@@ -480,7 +513,7 @@ fieldset {
     width: 27px;
     height: 23px;
 
-    background-image: url("../img/checkbox-off.svg");
+    background-image: url("/img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -492,44 +525,34 @@ fieldset {
     left: -44px;
     width: 27px;
     height: 23px;
-    background-image: url("../img/checkbox-on.svg");
+    background-image: url("/img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
 
 .filter-input-radio + label::before {
     content: "";
-
     position: absolute;
     left: -42px;
     top: -1px;
-
-
     border: 2px solid #4d4d4d;
     border-radius: 50%;
-
-
-
     width: 21px;
     height: 21px;
-
     background-repeat: no-repeat;
 }
 
 .filter-input:disabled + label {
     color: #000000;
-
 }
 
 .filter-input-radio:checked + label::after {
     content: "";
-
     position: absolute;
-    top: 5px;
-    left: -36px;
-
-    width: 13px;
-    height: 13px;
+    top: 4px;
+    left: -37px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: #4d4d4d;
     background-repeat: no-repeat;
@@ -614,34 +637,24 @@ fieldset {
 
 .text-form input[type="text"],
 .text-form input[type="email"] {
+    outline: 0;
     display: inline;
     box-sizing: border-box;
     width: 360px;
-    font: inherit;
-    color: #000000;
-    text-transform: uppercase;
-
+    font-weight: 100;
+    color: #000000;   
 }
 
-.user-info-left {
-
+.user-info-left,
+.user-info-right,
+.user-letter {
+    font-weight: 700;
     width: 100px
 }
-
-.user-info-right {
-
-    width: 100px;
-}
-
-.user-letter {
-    width: 100px;
-}
-
 
 .user-info-left input {
     box-sizing: border-box;
     width: 360px;
-
     font-size: 14px;
     line-height: 18px;
     padding: 10px 15px;
@@ -665,30 +678,59 @@ fieldset {
 
     font-size: 14px;
     line-height: 18px;
+    outline: 0;
     padding: 10px 15px;
     border: 2px solid #d7dcde;
     border-radius: 4px;
     width: 760px;
     margin-bottom: 48px;
     resize: none;
+
+}
+
+.user-info-left input:hover,
+.user-info-right input:hover,
+.user-letter textarea:hover {
+    border: 2px solid #b4b9bb;
+
+}
+
+.user-info-left input:focus,
+.user-info-right input:focus,
+.user-letter textarea:focus {
+    border: 2px solid black;
 }
 
 
+.text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown){
+         border: 2px solid red;
+     
 
+      }
 
 .modal-close {
     background-color: transparent;
     width: 50px;
     height: 50px;
-
+    opacity: 0.5;
     font-size: 0;
+    outline: 0;
 
     border: 0;
     cursor: pointer;
     position: absolute;
-    top: 30;
+    top: 30px;
     right: 70px;
+}
 
+.modal-close:hover {
+    outline: 0;
+    opacity: 1;
+}
+
+.modal-close:active {
+    outline: 0;
+    opacity: 0.3
 }
 
 .modal-close::before,
@@ -699,8 +741,9 @@ fieldset {
     width: 25px;
     height: 5px;
     background-color: red;
-    top: 18px;
-    left: 10px;}
+    top: 30px;
+    left: 10px;
+}
 
 .modal-close::before {
     transform: rotate(45deg);
@@ -1012,19 +1055,19 @@ fieldset {
     border: 2px solid #eeeeee;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item a[href]:hover,
+.pagination-item a[href]:focus {
     background-color: #dfdfdf;
 }
 
-.pagination-item a:active {
+.pagination-item a[href]::active {
     color: black;
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d5d5d5;
 }
 
 
-
+/*Карта*/
 .adress-on-map {
     display: block;
     content: "";
