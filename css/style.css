@@ -590,12 +590,14 @@ fieldset {
 /*Модальное окно*/
 
 .modal-form {
-    width: 800px;
+    box-sizing: border-box;
+    width: 960px;
     z-index: 500;
     color: black;
     position: fixed;
-    left: 15%;
+    left: 50%;
     top: 120px;
+    margin-left: -480px;
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 30px;
