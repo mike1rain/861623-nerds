@@ -39,6 +39,7 @@ body {
 }
 
 .site-navigation {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 440px;
@@ -55,14 +56,15 @@ body {
     color: black;
 }
 
-.active::after {
+.site-navigation .active::after {
     content: "";
     position: absolute;
+    bottom: -2px;
+    left: auto;
     display: block;
-    width: 75px;
+    width: 70px;
     height: 2px;
     background-color: #fb565a;
-    margin: 0px 0px -37px;
 }
 
 
@@ -217,6 +219,7 @@ fieldset {
 
 /*Кнопки*/
 .button {
+    font-family: 'Roboto', sans-serif;
     width: 240px;
     display: block;
     padding: 13px 0;
@@ -642,7 +645,7 @@ fieldset {
     box-sizing: border-box;
     width: 360px;
     font-weight: 100;
-    color: #000000;   
+    color: #000000;
 }
 
 .user-info-left,
@@ -653,6 +656,7 @@ fieldset {
 }
 
 .user-info-left input {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     width: 360px;
     font-size: 14px;
@@ -665,6 +669,7 @@ fieldset {
 .user-info-right input {
 
     width: 360px;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 
     font-size: 14px;
@@ -675,7 +680,7 @@ fieldset {
 }
 
 .user-letter textarea {
-
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 18px;
     outline: 0;
@@ -702,11 +707,11 @@ fieldset {
 }
 
 
-.text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown){
-         border: 2px solid red;
-     
+.text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid red;
 
-      }
+
+}
 
 .modal-close {
     background-color: transparent;
