@@ -552,6 +552,7 @@ fieldset {
 
 .filter-input:disabled + label {
     color: #000000;
+    opacity: 0.1;
 }
 
 .filter-input-radio:checked + label::after {
