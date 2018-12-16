@@ -712,7 +712,9 @@ fieldset {
 }
 
 
-.text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+.text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+.text-form input[type="text"]:invalid:not(:focus):not(:placeholder-shown)
+{
     border: 2px solid red;
 
 
