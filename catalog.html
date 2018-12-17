@@ -220,7 +220,8 @@
         <section class="map">
 
             <h2 class="visually-hidden">Как до нас добраться?</h2>
-            <a><img src="img/map.jpg" width="1440" height="416" alt="карта"></a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen></iframe>
+
             <div class="adress-on-map">
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <address>191186, Санкт-Петербург,
@@ -262,6 +263,46 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
+      <section class="modal-form">
+
+        <button class="modal-close" type="button"></button>
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" class="text-form" method="post">
+            <div class="half-width-forms">
+                <p class="user-info-left">
+                    <label for="user-name">Ваше имя:</label>
+                    <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" pattern="[A-Za-zА-Яа-я]{3,30}">
+                </p>
+                <p class="user-info-right">
+                    <label for="user-email">Ваше e-mail:</label>
+                    <input id="user-email" type="email" name="user-email" placeholder="Для отправки ответа" required>
+                </p>
+            </div>
+            <p class="user-letter">
+                <label for="user-text">Текст письма:</label>
+                <textarea id="user-text" name="user-text" rows="5" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <script>
+        var link = document.querySelector(".modal-button");
+
+        var popup = document.querySelector(".modal-form");
+
+        var close = popup.querySelector(".modal-close");
+
+        link.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+
+            close.addEventListener("click", function(evt) {
+                evt.preventDefault();
+                popup.classList.remove("modal-show");
+            });
+        });
+    </script>
 </body>
 
 </html>
