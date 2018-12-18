@@ -11,10 +11,9 @@
 </head>
 
 <body>
-    <!--Шапка сайта-->
+<!--Шапка сайта-->
     <header class="main-header">
         <nav class="main-navigation container">
-
             <a class="site-header-logo" href="index.html">
                 <img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип для студии"> </a>
             <ul class="site-navigation">
@@ -30,16 +29,18 @@
                     <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg> Корзина </a>
         </nav>
 
+
+
+<!--Слайдер-->
         <section class="slider">
             <div class="container">
                 <h1 class="visually-hidden">Преимущества</h1>
+
                 <div class="slider-controls">
-                    <button type="button" class="active"></button>
-                    <button type="button"></button>
-                    <button type="button"></button>
+                    <input class="slider-controls button" type="radio" name="point" id="slide1" checked>
+                    <input class="slider-controls button" type="radio" name="point" id="slide2">
+                    <input class="slider-controls button" type="radio" name="point" id="slide3">
                 </div>
-
-
                 <ul class="slider-list">
 
                     <li class="slider-item">
@@ -47,20 +48,23 @@
                         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
+
                     <li class="slider-item">
                         <h3 class="slider-head">Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
+
                     <li class="slider-item">
                         <h3 class="slider-head">Только ночь,<br> только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
-                </ul>
 
+                </ul>
             </div>
         </section>
+
     </header>
     <main>
         <div class="container">
@@ -96,6 +100,7 @@
                     </li>
                 </ul>
             </section>
+            <!--Клиенты--> 
             <section class="info-block">
                 <div class="info">
                     <h2>Мы — маленькая, но гордая
@@ -110,7 +115,6 @@
                 </div>
                 <div class="info-stats">
                     <h2 class="visually-hidden">Немного о нас</h2>
-
                     <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип студии">
                     <b> с 2004 года Любим точность во всем:</b>
                     <ul class="info-digits">
@@ -126,8 +130,8 @@
                     </ul>
                 </div>
             </section>
+<!--Клиенты--> 
             <section class="clients">
-
                 <h2 class="visually-hidden">Клиенты</h2>
                 <div class="clients-list">
                     <ul>
@@ -140,7 +144,7 @@
                 </div>
             </section>
         </div>
-        <!--Карта-->
+<!--Карта-->
         <section class="map">
 
             <h2 class="visually-hidden">Как до нас добраться?</h2>
@@ -155,11 +159,8 @@
             </div>
         </section>
     </main>
-
-    <footer class="main-footer container">
-
-
-
+ <!--Футер-->   
+       <footer class="main-footer container">
         <ul class="footer-social">
             <li>
                 <a class="social-button" href="#">
@@ -190,9 +191,8 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-
+ <!--Модальное окно обратной связи--> 
     <section class="modal-form">
-
         <button class="modal-close" type="button"></button>
         <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" class="text-form" method="post">
@@ -213,8 +213,8 @@
             <button class="button" type="submit">Отправить</button>
         </form>
     </section>
-
-    <script>
+ <!--Скрипт--> 
+     <script>
         var link = document.querySelector(".modal-button");
 
         var popup = document.querySelector(".modal-form");

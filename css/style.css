@@ -8,6 +8,7 @@ body {
     color: black;
 }
 
+
 /*Хедер*/
 .main-header {
     padding-top: 45px;
@@ -72,7 +73,6 @@ body {
     background-color: #fb565a;
 }
 
-
 .site-header-logo {
     order: 0;
     width: 160px;
@@ -91,13 +91,10 @@ body {
     width: 120px;
 }
 
-
 .cart-icon {
     padding-right: 10px;
     fill: #6e6e6e;
 }
-
-
 
 .main-navigation-wrapper {
     width: 100%;
@@ -110,8 +107,8 @@ body {
     list-style: none;
 }
 
-/*лишки, скрытие, заголовки и тд */
 
+/*лишки, скрытие, заголовки и тд */
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -180,7 +177,6 @@ h3 {
 fieldset {
     border: none;
 }
-
 
 .clients-list ul {
     display: flex;
@@ -332,11 +328,6 @@ fieldset {
 }
 
 
-
-
-
-
-
 /*Сервисы*/
 .services {
     background-image:
@@ -365,11 +356,7 @@ fieldset {
 }
 
 
-
-
-
 /*Каталог*/
-
 .catalog-columns {
     display: flex;
     justify-content: space-between;
@@ -392,6 +379,7 @@ fieldset {
 .catalog-item-title a {
     color: black;
 }
+
 
 /*Карточка*/
 .card-style {
@@ -462,8 +450,8 @@ fieldset {
         20px 0 0 #fff;
 }
 
-/*Сайдбар*/
 
+/*Сайдбар*/
 .filter fieldset:first-child {
     margin-bottom: 35px;
 }
@@ -568,6 +556,7 @@ fieldset {
     background-repeat: no-repeat;
 }
 
+
 /*футер*/
 .main-footer {
     display: flex;
@@ -575,9 +564,9 @@ fieldset {
     margin-bottom: 70px;
 }
 
+
+
 /*Соц.сети*/
-
-
 .footer-social {
     width: 260px;
     display: flex;
@@ -602,7 +591,6 @@ fieldset {
 
 }
 
-
 .social-button:hover {
     background: #e74246;
 }
@@ -620,9 +608,9 @@ fieldset {
     padding-bottom: 10px;
 }
 
+
+
 /*Модальное окно*/
-
-
 .modal-button {
     font-family: 'Roboto', sans-serif;
     width: 240px;
@@ -750,7 +738,6 @@ fieldset {
     border: 2px solid black;
 }
 
-
 .text-form input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
 .text-form input[type="text"]:invalid:not(:focus):not(:placeholder-shown) {
     border: 2px solid red;
@@ -805,6 +792,8 @@ fieldset {
     transform: rotate(-45deg);
 }
 
+
+
 /*Effects*/
 @keyframes bounce {
     0% {
@@ -849,10 +838,7 @@ fieldset {
 
 
 
-
-
 /*Слайдер*/
-
 .slider {
     position: relative;
     background-color: #eeeeee;
@@ -866,21 +852,23 @@ fieldset {
 .slider-controls {
     position: absolute;
     left: 50%;
-    bottom: 100px;
+    bottom: 50px;
     z-index: 100;
     width: 160px;
-    height: 18px;
+    height: 10px;
     text-align: center;
     font-size: 0;
     transform: translateX(-50%);
 }
 
-.slider-controls button {
+.slider-controls .button {
     position: relative;
     display: inline-block;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     padding: 8px;
+ 
+    margin-right: 10px;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -901,8 +889,8 @@ fieldset {
     left: 50%;
     top: 50%;
     z-index: 2;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     margin: -4px;
     background-color: inherit;
     border: 2px solid #c1c1c1;
@@ -959,11 +947,7 @@ fieldset {
 }
 
 
-
-
-
 /*Инфо-блок*/
-
 .info-block {
     display: flex;
     justify-content: space-between;
@@ -997,7 +981,6 @@ fieldset {
     font-size: 25px;
 }
 
-
 .info-digits p {
     line-height: 18px;
 
@@ -1012,8 +995,9 @@ fieldset {
 }
 
 
-/*Сложный фильтр*/
 
+
+/*Сложный фильтр*/
 
 .filter-item {
     margin: 0;
@@ -1118,7 +1102,6 @@ fieldset {
 
 
 /*Пагинация*/
-
 .pagination-list {
     color: black;
     display: flex;
@@ -1180,7 +1163,6 @@ fieldset {
     margin: 20px;
 }
 
-
 .adress-on-map address {
     font-style: normal;
     margin: 20px;
@@ -1189,10 +1171,11 @@ fieldset {
     line-height: 24px;
 }
 
+
+
+
+
 /*Каталог фильтр верхний*/
-
-
-
 .catalog-sort {
     display: block;
     text-transform: uppercase;
