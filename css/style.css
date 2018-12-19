@@ -185,9 +185,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
-    padding-bottom: 80px;
-    background-image:
-        url("img/divider.png");
+    padding-bottom: 70px;
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, repeat;
 }
@@ -422,7 +420,7 @@ fieldset {
     opacity: 1;
     width: 362px;
     z-index: 1001;
-    padding: 20px 60px 60px 60px;
+    padding: 20px 60px 50px 60px;
     text-align: center;
     position: absolute;
     background-color: #eeeeee;
@@ -903,19 +901,19 @@ margin-bottom: 0px;
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("img/slide1.png");
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("img/slide2.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("img/slide3.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
