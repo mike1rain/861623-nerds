@@ -6,12 +6,12 @@
     <title>Главная - Нёрдс</title>
     <link rel="icon" href="img/favicon.png" type="image/jpg">
     <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css"  rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-<!--Шапка сайта-->
+    <!--Шапка сайта-->
     <header class="main-header">
         <nav class="main-navigation container">
             <a class="site-header-logo" href="index.html">
@@ -29,38 +29,34 @@
                     <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg> Корзина </a>
         </nav>
 
-
-
-<!--Слайдер-->
+        <!--Слайдер-->
         <section class="slider">
             <div class="container">
-                <h1 class="visually-hidden">Преимущества</h1>
-
+                <h2 class="visually-hidden">Преимущества</h2>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
                 <div class="slider-controls">
-                    <input class="slider-controls button" type="button" name="point" id="slide1" checked>
-                    <input class="slider-controls button" type="radio" name="point" id="slide2">
-                    <input class="slider-controls button" type="radio" name="point" id="slide3">
+                    <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+                    <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+                    <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
                 </div>
                 <ul class="slider-list">
-
                     <li class="slider-item">
                         <h3 class="slider-head">Долго, дорого,<br> скрупулезно.</h3>
                         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
-
                     <li class="slider-item">
                         <h3 class="slider-head">Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
-
                     <li class="slider-item">
                         <h3 class="slider-head">Только ночь,<br> только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                         <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
-
                 </ul>
             </div>
         </section>
@@ -100,7 +96,7 @@
                     </li>
                 </ul>
             </section>
-            <!--Клиенты--> 
+            <!--Инфоблок-->
             <section class="info-block">
                 <div class="info">
                     <h2>Мы — маленькая, но гордая
@@ -130,7 +126,7 @@
                     </ul>
                 </div>
             </section>
-<!--Клиенты--> 
+            <!--Клиенты-->
             <section class="clients">
                 <h2 class="visually-hidden">Клиенты</h2>
                 <div class="clients-list">
@@ -144,25 +140,25 @@
                 </div>
             </section>
         </div>
-<!--Карта-->
+        <!--Карта-->
         <section class="map">
 
-        
-                   <div class="map-container">
-                        <div class="adress-on-map">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <address>191186, Санкт-Петербург,
-                    ул. Б. Конюшенная, д. 19/8<br>
-                    тел. +7 (812) 275-75-75</address>
-                <a href="" class="modal-button">Написать нам</a>
-            </div>
+
+            <div class="map-container">
+                <div class="adress-on-map">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <address>191186, Санкт-Петербург,
+                        ул. Б. Конюшенная, д. 19/8<br>
+                        тел. +7 (812) 275-75-75</address>
+                    <a href="" class="modal-button">Написать нам</a>
+                </div>
             </div>
             <h2 class="visually-hidden">Как до нас добраться?</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="416" allowfullscreen></iframe>
         </section>
     </main>
- <!--Футер-->   
-       <footer class="main-footer container">
+    <!--Футер-->
+    <footer class="main-footer container">
         <ul class="footer-social">
             <li>
                 <a class="social-button" href="#">
@@ -193,7 +189,7 @@
             <p>Cкидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
- <!--Модальное окно обратной связи--> 
+    <!--Модальное окно обратной связи-->
     <section class="modal-form">
         <button class="modal-close" type="button"></button>
         <h2>Напишите нам</h2>
@@ -215,8 +211,8 @@
             <button class="button" type="submit">Отправить</button>
         </form>
     </section>
- <!--Скрипт--> 
-     <script>
+    <!--Скрипт-->
+    <script>
         var link = document.querySelector(".modal-button");
 
         var popup = document.querySelector(".modal-form");

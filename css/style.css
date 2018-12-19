@@ -114,7 +114,6 @@ body {
     margin: 0 auto;
     padding: 0 10px;
 }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -152,6 +151,10 @@ a {
     height: 4px;
     background-color: #fb565a;
     margin: 0 11px 4px -37px;
+}
+
+.info-list li {
+    margin-bottom: 20px
 }
 
 h1 {
@@ -384,7 +387,7 @@ fieldset {
 /*Карточка*/
 .card-style {
     width: 360px;
-    height: 577px;
+    height: 576px;
     background-color: white;
     border: 1px solid #eeeeee;
     border-top: 0px;
@@ -411,7 +414,7 @@ fieldset {
     opacity: 0;
     width: 360px;
     z-index: 100;
-    bottom: 0px;
+    bottom: -1px;
     position: absolute;
 }
 
@@ -560,8 +563,8 @@ fieldset {
 /*футер*/
 .main-footer {
     display: flex;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
 
@@ -570,7 +573,7 @@ fieldset {
 .footer-social {
     width: 260px;
     display: flex;
-    padding: 25px;
+    padding: 25px 0;
 }
 
 .social-button {
@@ -587,8 +590,6 @@ fieldset {
 
 .social-icon {
     fill: white;
-
-
 }
 
 .social-button:hover {
@@ -602,13 +603,8 @@ fieldset {
 .last-text {
     width: 760px;
     margin-left: 140px;
+    padding: 0;
 }
-
-.last-text p {
-    padding-bottom: 10px;
-}
-
-
 
 /*Модальное окно*/
 .modal-button {
@@ -840,111 +836,127 @@ fieldset {
 
 /*Слайдер*/
 .slider {
-    position: relative;
-    background-color: #eeeeee;
-}
-
-.slider-head {
-    text-transform: none;
-
+  position: relative;
+  background-color: #eeeeee;
 }
 
 .slider-controls {
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    z-index: 100;
-    width: 160px;
-    height: 10px;
-    text-align: center;
-    font-size: 0;
-    transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
 
-.slider-controls .button {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 8px;
-
-    margin-right: 10px;
-    border-radius: 50%;
-    cursor: pointer;
+.slider-controls label {
+  position: relative;
+  
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.slider-controls::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    z-index: 1;
-    background: #ffffff;
-    border-radius: 50%;
-}
-
-.slider-controls .active::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    width: 8px;
-    height: 8px;
-    margin: -4px;
-    background-color: inherit;
-    border: 2px solid #c1c1c1;
-    border-radius: 50%;
+.slider-controls label::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  
+  width: 18px;
+  height: 18px;
+  
+  background: #ffffff;
+  
+  border-radius: 50%;
 }
 
 .slider-list {
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
 }
 
 .slider-item {
-    display: none;
-    padding: 70px 0 70px 0;
-}
-
-.slider-item:nth-child(3) {
-    display: block;
+  display: none;
+  padding: 78px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
-    background-image: url("../img/slide1.png");
-    background-repeat: no-repeat;
-    background-position: 93% 18px;
+  background-image: url("/img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-    background-image: url("../img/slide2.png");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+  background-image: url("/img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-    background-image: url("../img/slide3.png");
-    background-repeat: no-repeat;
-    background-position: 100% 20px;
+  background-image: url("/img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+#product-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .slider-item h3 {
-    max-width: 600px;
-    margin: 0;
-    margin-bottom: 27px;
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+  
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
 }
 
 .slider-item p {
-    max-width: 430px;
-    margin: 0;
-    margin-bottom: 38px;
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
 }
+.slider-head{
+    text-transform:capitalize;}
 
 
 /*Инфо-блок*/
@@ -959,11 +971,16 @@ fieldset {
     background-repeat: no-repeat, repeat;
 }
 
+.info-block img {
+    margin-bottom: 35px;
+}
+
 .info-block b {
     text-transform: uppercase;
 }
 
 .info-digits {
+    margin-top: 40px;
     display: flex;
     padding: 0;
 }
@@ -990,9 +1007,6 @@ fieldset {
     width: 360px;
 }
 
-.info {
-    width: 660px;
-}
 
 
 
@@ -1106,6 +1120,7 @@ fieldset {
     color: black;
     display: flex;
     margin-bottom: 50px;
+    padding-left: 0;
 }
 
 .pagination-item a {
@@ -1122,6 +1137,7 @@ fieldset {
 .pagination-item a {
     vertical-align: middle;
     text-align: center;
+    color: black;
 }
 
 .pagination-item-current a {
@@ -1132,6 +1148,7 @@ fieldset {
 .pagination-item a[href]:hover,
 .pagination-item a[href]:focus {
     background-color: #dfdfdf;
+  
 }
 
 .pagination-item a[href]::active {
@@ -1145,7 +1162,7 @@ fieldset {
 .map-container {
     width: 1200px;
     position: relative;
-    margin:  auto;
+    margin: auto;
     padding: 0;
 }
 
@@ -1164,9 +1181,11 @@ fieldset {
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
     padding: 30px;
 }
+
 iframe {
     border: 0;
 }
+
 .adress-on-map a {
     margin: 20px;
 }
@@ -1189,7 +1208,8 @@ iframe {
 
 .sort-line {
     display: flex;
-    align-items: center;
+    vertical-align: top;
+    align-items: baseline;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -1211,37 +1231,28 @@ iframe {
 }
 
 .catalog-arrows {
-    display: inline;
+    display: flex;
+    vertical-align: middle;
 }
 
 .catalog-arrow-up {
     width: 11px;
     height: 10px;
-    border-bottom: solid 10px #eeeeee;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
+    fill: #eeeeee;
 }
 
 .catalog-arrow-down {
     width: 11px;
     height: 10px;
-    border-top: solid 10px #eeeeee;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
+    fill: #eeeeee;
+    padding-right: 10px;
 }
 
 .catalog-arrow-up:hover {
-    width: 11px;
-    height: 10px;
-    border-bottom: solid 10px black;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
+    fill: black;
+
 }
 
 .catalog-arrow-down:hover {
-    width: 11px;
-    height: 10px;
-    border-top: solid 10px black;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
+    fill: black;
 }
