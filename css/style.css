@@ -1154,7 +1154,7 @@ fieldset {
     content: "";
     position: absolute;
     left: 20px;
-    top: -350px;
+    top: 70px;
     z-index: 3;
     width: 340px;
     text-align: center;
