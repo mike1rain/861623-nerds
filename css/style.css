@@ -605,6 +605,10 @@ fieldset {
     margin-left: 140px;
     padding: 0;
 }
+.last-text h2{
+margin-bottom: 0px;
+
+}
 
 /*Модальное окно*/
 .modal-button {
