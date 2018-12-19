@@ -867,7 +867,7 @@ fieldset {
     width: 20px;
     height: 20px;
     padding: 8px;
- 
+
     margin-right: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -1142,15 +1142,21 @@ fieldset {
 
 
 /*Карта*/
+.map-container {
+    width: 1200px;
+    position: relative;
+    margin:  auto;
+    padding: 0px;
+}
+
 .adress-on-map {
     display: block;
     content: "";
     position: absolute;
-    left: 10%;
-    margin-top: -350px;
+    left: 20px;
+    top: -350px;
     z-index: 3;
     width: 340px;
-    align-items: center;
     text-align: center;
 
     background-color: white;
@@ -1170,8 +1176,6 @@ fieldset {
     font-size: 16px;
     line-height: 24px;
 }
-
-
 
 
 
