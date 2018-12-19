@@ -1127,6 +1127,8 @@ margin-bottom: 0px;
     display: flex;
     margin-bottom: 50px;
     padding-left: 0;
+    font-weight: 700;
+    
 }
 
 .pagination-item a {
