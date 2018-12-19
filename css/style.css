@@ -427,7 +427,7 @@ fieldset {
     position: absolute;
     background-color: #eeeeee;
     box-sizing: border-box;
-    box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
+
 }
 
 .catalog-item::after {
@@ -899,19 +899,19 @@ margin-bottom: 0px;
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("/img/slide1.png");
+  background-image: url("img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("/img/slide2.png");
+  background-image: url("img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("/img/slide3.png");
+  background-image: url("img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
