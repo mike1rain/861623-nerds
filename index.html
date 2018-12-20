@@ -211,24 +211,10 @@
             <button class="button" type="submit">Отправить</button>
         </form>
     </section>
-    <!--Скрипт-->
-    <script>
-        var link = document.querySelector(".modal-button");
 
-        var popup = document.querySelector(".modal-form");
-
-        var close = popup.querySelector(".modal-close");
-
-        link.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-
-            close.addEventListener("click", function(evt) {
-                evt.preventDefault();
-                popup.classList.remove("modal-show");
-            });
-        });
-    </script>
+    
+    
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
