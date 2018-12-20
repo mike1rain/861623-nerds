@@ -197,7 +197,7 @@
             <div class="half-width-forms">
                 <p class="user-info-left">
                     <label for="user-name">Ваше имя:</label>
-                    <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" pattern="[A-Za-zА-Яа-я]{3,30}">
+                    <input id="user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста" pattern="[A-Za-zА-Яа-я]{3,30}" required>
                 </p>
                 <p class="user-info-right">
                     <label for="user-email">Ваше e-mail:</label>
@@ -206,7 +206,7 @@
             </div>
             <p class="user-letter">
                 <label for="user-text">Текст письма:</label>
-                <textarea id="user-text" name="user-text" rows="5" placeholder="В свободной форме"></textarea>
+                <textarea id="user-text" name="user-text" rows="5" placeholder="В свободной форме" required></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>
