@@ -57,10 +57,10 @@ iframe {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 438px;
+    width: 436px;
     margin: 0;
-    padding: 10px;
-    padding-right: 25px;
+    padding: 0;
+
 
 
     align-items: center;
@@ -92,7 +92,7 @@ iframe {
 .site-header-logo {
     order: 0;
     margin-top: -5px;
-    width: 111px;
+    width: 117px;
     height: 70px;
 }
 
@@ -104,7 +104,8 @@ iframe {
 
 
 .cart-icon {
-
+    margin-top: 10px;
+    padding-right: 20px;
     fill: #6e6e6e;
 }
 
@@ -199,19 +200,50 @@ fieldset {
 .clients-list ul {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-top: 30px;
     padding-left: 30px;
-    padding-bottom: 44px;
-     background-image:
+
+
+}
+
+
+.clients {
+    position: relative;
+
+    margin-bottom: 50px;
+
+    background-image:
         url("../img/divider.png");
     background-position: bottom, 0, 0;
     background-repeat: no-repeat, repeat;
+}
+
+.clients-list::after {
+    content: "";
+    position: absolute;
+    left: 578px;
+    top: 50px;
+    width: 2px;
+    height: 50px;
+    background-color: #eeeeee;
+
+    display: block;
+
+    background-color: #eeeeee;
+    content: "";
+    box-shadow:
+        -300px 0 0 #eeeeee,
+        300px 0 0 #eeeeee;
+
 }
 
 .client-logo {
     opacity: 0.3;
     width: 240px;
 }
+
+
 
 .client-logo:hover {
     opacity: 1;
@@ -417,7 +449,7 @@ fieldset {
     background-color: white;
     border: 1px solid #eeeeee;
     border-top: 0px;
-   
+
 
 
 }
@@ -430,7 +462,7 @@ fieldset {
 
     background-color: #eeeeee;
     border-radius: 6px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
     position: relative;
 
 }
@@ -448,15 +480,16 @@ fieldset {
     width: 360px;
     z-index: 100;
     position: absolute;
+
 }
 
 .catalog-item:hover .item-info {
-    padding: 0;
-    margin: 0;
+
     opacity: 1;
     width: 362px;
     z-index: 1001;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 80px;
     padding-right: 80px;
     text-align: center;
@@ -467,7 +500,7 @@ fieldset {
 }
 
 
-.catalog-button{
+.catalog-button {
 
     font-family: "Roboto", "Arial", sans-serif;
     width: 200px;
@@ -496,11 +529,13 @@ fieldset {
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d7373b;
 }
-    
-    
+
+
 
 
 .catalog-item-text {
+    padding: 0;
+
     text-align: center;
     text-transform: none;
     color: #666666;
@@ -510,20 +545,13 @@ fieldset {
     content: "";
     position: absolute;
     left: 30px;
-    top: 12px;
+    top: 15px;
     display: inline-block;
     width: 5px;
     height: 5px;
-    padding: 5px;
+    padding: 4px;
     background-color: white;
     border-radius: 50%;
-    position: absolute;
-
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: #fff;
-    content: "";
     box-shadow:
         -20px 0 0 #fff,
         20px 0 0 #fff;
@@ -571,7 +599,7 @@ fieldset {
 }
 
 .filter-option label:hover {
-    
+
     opacity: 1;
 }
 
@@ -640,7 +668,7 @@ fieldset {
 /*футер*/
 .main-footer {
     display: flex;
-    
+
 
 }
 
@@ -690,12 +718,13 @@ fieldset {
     width: 760px;
     margin-left: 140px;
     padding: 0;
-    padding-top: 30px;  
+    padding-top: 30px;
 }
 
-.last-text p{
- margin-top: -25px;  
+.last-text p {
+    margin-top: -25px;
 }
+
 /*Модальное окно*/
 .modal-button {
     font-family: "Roboto", "Arial", sans-serif;
@@ -1075,13 +1104,14 @@ fieldset {
 }
 
 .info-digits {
-    
+
     margin-top: 40px;
     display: flex;
     padding: 0;
 }
 
 .info-digits li {
+    text-align: left;
     padding-top: 12px;
     width: 110px;
     padding-right: 25px;
@@ -1098,13 +1128,14 @@ fieldset {
 }
 
 .info-digits p {
-    
+
     line-height: 20px;
 
 }
 
 .info-stats {
     width: 360px;
+    text-align: center;
 
 }
 
@@ -1136,23 +1167,21 @@ fieldset {
 .range-controls {
     position: relative;
     box-sizing: border-box;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 0px;
     margin-bottom: 20px;
     background-color: #eeeeee;
-margin-bottom: 15px;
+    margin-bottom: 15px;
     border-radius: 5px;
 }
 
 .range-controls .scale {
     height: 2px;
-
     background: #d7dcde;
 }
 
 .range-controls .bar {
-    width: 100%;
+    width: 70px;
     height: 2px;
-
     background: #00ca74;
 }
 
@@ -1225,19 +1254,18 @@ margin-bottom: 15px;
 
 }
 
-.pagination-item a {
 
+.pagination-item a {
+    height: 45px;
     width: 50px;
-  
+    display: block;
     background-color: #eeeeee;
-    margin-right: 15px;
-box-sizing: border-box;
+    margin-right: 10px;
+    box-sizing: border-box;
     border-radius: 5px;
-    padding: 15px 20px 15px 20px;
-}
-
-.pagination-item a {
-    vertical-align: middle;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
     color: black;
 }
@@ -1268,42 +1296,34 @@ box-sizing: border-box;
     padding: 0;
     margin-top: 80px;
 
-    
+
 }
 
 .adress-on-map {
     box-sizing: border-box;
     display: block;
     content: "";
-   
     position: absolute;
     left: 0px;
     top: 50px;
     z-index: 3;
     width: 320px;
-    text-align: center;
-
     background-color: white;
-
     box-shadow: 0 6px 15px 0 rgba(0, 1, 1, 0.25);
-    padding: 38px 50px 10px 50px;
+    padding: 36px 60px 50px 50px;
 }
 
 
 
-.adress-on-map a {
-    margin: 42px 0px 40px 0px;
-    
-
-}
 
 .adress-on-map address {
-
+    padding-top: 5px;
     font-style: normal;
     margin: 0px;
     color: grey;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -1324,8 +1344,8 @@ box-sizing: border-box;
 }
 
 
-.catalog-sort-option  {
-padding-left: 25px;
+.catalog-sort-option {
+    padding-left: 25px;
     font-size: 14px;
     color: grey;
 }
@@ -1338,7 +1358,7 @@ padding-left: 25px;
 .sort-line h3 {
     font-size: 18px;
     margin: 0;
-margin-right: auto
+    margin-right: auto
 }
 
 .catalog-arrows {
