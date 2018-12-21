@@ -456,8 +456,7 @@ fieldset {
     opacity: 1;
     width: 362px;
     z-index: 1001;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 40px;
     padding-left: 80px;
     padding-right: 80px;
     text-align: center;
@@ -467,9 +466,42 @@ fieldset {
 
 }
 
+
+.catalog-button{
+
+    font-family: "Roboto", "Arial", sans-serif;
+    width: 200px;
+    display: block;
+    padding: 13px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 2px;
+    vertical-align: middle;
+
+    background-color: #fb565a;
+}
+
+.catalog-button:hover,
+.catalog-button:focus {
+    background-color: #e74246;
+}
+
+.catalog-button:active {
+    color: rgba(255, 255, 255, 0.302);
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+    background-color: #d7373b;
+}
+    
+    
+
+
 .catalog-item-text {
     text-align: center;
- 
     text-transform: none;
     color: #666666;
 }
