@@ -571,7 +571,7 @@ fieldset {
 }
 
 .filter-option label:hover {
-    font-weight: 700;
+    
     opacity: 1;
 }
 
@@ -1322,9 +1322,7 @@ box-sizing: border-box;
     margin-bottom: 50px;
     margin-top: 20px;
 }
-.sort-line h3{
-    width: 460px;
-}
+
 
 .catalog-sort-option  {
 padding-left: 25px;
@@ -1340,13 +1338,13 @@ padding-left: 25px;
 .sort-line h3 {
     font-size: 18px;
     margin: 0;
-    width: 360px;
-
+margin-right: auto
 }
 
 .catalog-arrows {
     display: flex;
     vertical-align: middle;
+    padding-left: 30px;
 }
 
 .catalog-arrow-up {
