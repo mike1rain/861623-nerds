@@ -9,9 +9,10 @@ body {
 }
 
 .container {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 a {
@@ -137,7 +138,9 @@ input[type="radio"].visually-hidden {
 
     white-space: nowrap;
 
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -150,6 +153,7 @@ input[type="radio"].visually-hidden {
 .info-list li:before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 25px;
     height: 2px;
     background-color: #fb565a;
@@ -162,6 +166,7 @@ input[type="radio"].visually-hidden {
 }
 
 .last-text h2 {
+    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
 }
@@ -193,15 +198,11 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
 }
 
-fieldset {
-    border: none;
-}
-
 .clients-list ul {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 45px;
-    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 45px;
     padding-left: 30px;
 
 
@@ -212,7 +213,6 @@ fieldset {
     position: relative;
 
     margin-bottom: 50px;
-
     background-image:
         url("../img/divider.png");
     background-position: bottom, 0, 0;
@@ -240,7 +240,8 @@ fieldset {
 
 .client-logo {
     opacity: 0.3;
-    width: 240px;
+    width: 215px;
+    
 }
 
 
@@ -547,6 +548,7 @@ fieldset {
     left: 30px;
     top: 15px;
     display: inline-block;
+    vertical-align: middle;
     width: 5px;
     height: 5px;
     padding: 4px;
@@ -559,6 +561,13 @@ fieldset {
 
 
 /*Сайдбар*/
+
+.filter-option, fieldset {
+
+    border: none;
+}
+
+
 .filter fieldset:first-child {
     margin-bottom: 35px;
 }
@@ -595,7 +604,10 @@ fieldset {
     position: relative;
     display: block;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .filter-option label:hover {
@@ -711,9 +723,14 @@ fieldset {
 }
 
 .social-button:active {
+    box-shadow: inset 0px 6px 0px 0px rgba(0, 0, 0, 0.3);
     background: #d7373b;
+ 
 }
-
+.social-button svg:active {
+   opacity: 0.5;
+ 
+}
 .last-text {
     width: 760px;
     margin-left: 140px;
@@ -780,7 +797,9 @@ fieldset {
 .modal-show {
     display: block;
 
-    animation: bounce 0.6s;
+    -webkit-animation: bounce 0.6s;
+
+            animation: bounce 0.6s;
 }
 
 .half-width-forms {
@@ -887,7 +906,7 @@ fieldset {
 
 .modal-close:active {
     outline: 0;
-    opacity: 0.3
+    opacity: 0.5;
 }
 
 .modal-close::before,
@@ -903,39 +922,67 @@ fieldset {
 }
 
 .modal-close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .modal-close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 
 
 /*Effects*/
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
-        transform: translateY(-2000px);
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px);
     }
 
     70% {
-        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
     }
 
     90% {
-        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
     }
 
     100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+                transform: translateY(-2000px);
+    }
+
+    70% {
+        -webkit-transform: translateY(30px);
+                transform: translateY(30px);
+    }
+
+    90% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
 
     0%,
     100% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
 
     10%,
@@ -943,14 +990,42 @@ fieldset {
     50%,
     70%,
     90% {
-        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
     }
 
     20%,
     40%,
     60%,
     80% {
-        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
+                transform: translateX(10px);
     }
 }
 
@@ -973,12 +1048,13 @@ fieldset {
 
     text-align: center;
     font-size: 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .slider-controls label {
     position: relative;
-
+    vertical-align: middle;
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -1167,7 +1243,7 @@ fieldset {
 .range-controls {
     position: relative;
     box-sizing: border-box;
-    padding: 40px 0px;
+    padding: 40px 20px;
     margin-bottom: 20px;
     background-color: #eeeeee;
     margin-bottom: 15px;
@@ -1175,19 +1251,19 @@ fieldset {
 }
 
 .range-controls .scale {
+
     height: 2px;
     background: #d7dcde;
 }
 
 .range-controls .bar {
-    width: 70px;
     height: 2px;
     background: #00ca74;
 }
 
 .range-controls .toggle {
     position: absolute;
-    top: 32px;
+    top: 31px;
     left: 0;
 
     width: 4px;
@@ -1210,13 +1286,14 @@ fieldset {
 }
 
 .price-controls {
+    display: flex;
     font-size: 0;
 }
 
 .price-controls label {
     display: inline-block;
     width: 50%;
-
+    vertical-align: middle;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -1247,28 +1324,29 @@ fieldset {
 .pagination-list {
     color: black;
     display: flex;
-    margin-bottom: 0px;
-    padding-left: 0;
+    padding-left: 0px;
+
     font-weight: 500;
-    margin-bottom: -5px;
+    margin-bottom: -20px;
 
 }
 
-.pagination-item{
+.pagination-item {
     margin-right: 10px;
     margin-top: 13px;
-    
+
 }
 
 
 
 .pagination-item a {
- 
-   
-    display: block;
-    background-color: #eeeeee;  
-border-radius: 5px;
-vertical-align: middle;
+
+
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    vertical-align: middle;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -1288,7 +1366,7 @@ vertical-align: middle;
 
 }
 
-.pagination-item a[href]::active {
+.pagination-item a[href]:active {
     color: black;
     box-shadow: inset 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
     background-color: #d5d5d5;
@@ -1297,11 +1375,13 @@ vertical-align: middle;
 
 /*Карта*/
 .map-container {
-    width: 1160px;
+    width: 1200px;
     position: relative;
     margin: auto;
-    padding: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
     margin-top: 80px;
+    background-color: #e4e4e4;
 
 
 }
@@ -1311,7 +1391,7 @@ vertical-align: middle;
     display: block;
     content: "";
     position: absolute;
-    left: 0px;
+    left: 20px;
     top: 50px;
     z-index: 3;
     width: 320px;
@@ -1336,6 +1416,9 @@ vertical-align: middle;
 
 
 /*Каталог фильтр верхний*/
+.fixed_h3 {
+    font-weight:700;
+}
 .catalog {
     display: block;
     text-transform: uppercase;
@@ -1357,9 +1440,13 @@ vertical-align: middle;
     color: grey;
 }
 
-.catalog-sort-option:hover {
+.catalog-sort-option:hover,
+.catalog-sort-option:active {
     color: black;
+}
 
+.catalog-sort-option:checked {
+ color: red;
 }
 
 .sort-line h3 {
@@ -1372,6 +1459,8 @@ vertical-align: middle;
     display: flex;
     vertical-align: middle;
     padding-left: 30px;
+    
+    
 }
 
 .catalog-arrow-up {
